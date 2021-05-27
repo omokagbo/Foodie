@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  Foodie
 //
-//  Created by Decagon on 27/05/2021.
+//  Created by omokagbo on 27/05/2021.
 //
 
 import UIKit

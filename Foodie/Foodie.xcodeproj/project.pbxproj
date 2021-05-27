@@ -13,6 +13,7 @@
 		B427726D2660421E007FA7E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B427726B2660421E007FA7E5 /* Main.storyboard */; };
 		B427726F26604221007FA7E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B427726E26604221007FA7E5 /* Assets.xcassets */; };
 		B427727226604221007FA7E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B427727026604221007FA7E5 /* LaunchScreen.storyboard */; };
+		B427727E266060CF007FA7E5 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B427727D266060CF007FA7E5 /* OnboardingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		B427726E26604221007FA7E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B427727126604221007FA7E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B427727326604221007FA7E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B427727D266060CF007FA7E5 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,64 @@
 		B42772642660421E007FA7E5 /* Foodie */ = {
 			isa = PBXGroup;
 			children = (
-				B42772652660421E007FA7E5 /* AppDelegate.swift */,
-				B42772672660421E007FA7E5 /* SceneDelegate.swift */,
+				B427727F26606127007FA7E5 /* App + Scene Delegates */,
+				B427727926605ECE007FA7E5 /* Models */,
+				B427727A26605EE6007FA7E5 /* Views */,
+				B427727B26605F1E007FA7E5 /* CustomViews */,
 				B42772692660421E007FA7E5 /* ViewController.swift */,
 				B427726B2660421E007FA7E5 /* Main.storyboard */,
-				B427726E26604221007FA7E5 /* Assets.xcassets */,
 				B427727026604221007FA7E5 /* LaunchScreen.storyboard */,
-				B427727326604221007FA7E5 /* Info.plist */,
+				B42772802660614E007FA7E5 /* Resources */,
 			);
 			path = Foodie;
+			sourceTree = "<group>";
+		};
+		B427727926605ECE007FA7E5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B427727A26605EE6007FA7E5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B427727C2660609E007FA7E5 /* Onboarding */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B427727B26605F1E007FA7E5 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		B427727C2660609E007FA7E5 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				B427727D266060CF007FA7E5 /* OnboardingViewController.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		B427727F26606127007FA7E5 /* App + Scene Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				B42772652660421E007FA7E5 /* AppDelegate.swift */,
+				B42772672660421E007FA7E5 /* SceneDelegate.swift */,
+			);
+			path = "App + Scene Delegates";
+			sourceTree = "<group>";
+		};
+		B42772802660614E007FA7E5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B427726E26604221007FA7E5 /* Assets.xcassets */,
+				B427727326604221007FA7E5 /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +191,7 @@
 				B427726A2660421E007FA7E5 /* ViewController.swift in Sources */,
 				B42772662660421E007FA7E5 /* AppDelegate.swift in Sources */,
 				B42772682660421E007FA7E5 /* SceneDelegate.swift in Sources */,
+				B427727E266060CF007FA7E5 /* OnboardingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +340,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FR92VWWUNN;
-				INFOPLIST_FILE = Foodie/Info.plist;
+				INFOPLIST_FILE = Foodie/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +359,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FR92VWWUNN;
-				INFOPLIST_FILE = Foodie/Info.plist;
+				INFOPLIST_FILE = Foodie/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="CJL-ju-WeF">
-                                <rect key="frame" x="107" y="332.5" width="200" height="241.5"/>
+                                <rect key="frame" x="107" y="320" width="200" height="266.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Foodie" translatesAutoresizingMaskIntoConstraints="NO" id="3O3-zO-efc">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
@@ -29,6 +29,12 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Foodie™" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lhR-vD-Mxp">
                                         <rect key="frame" x="0.0" y="200" width="200" height="41.5"/>
                                         <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="34"/>
+                                        <color key="textColor" red="1" green="0.051106296480000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your first stop homemade meals.." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="pic-dP-S2i">
+                                        <rect key="frame" x="0.0" y="241.5" width="200" height="25"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="18"/>
                                         <color key="textColor" red="1" green="0.051106296480000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
