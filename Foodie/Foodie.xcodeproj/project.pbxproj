@@ -9,23 +9,23 @@
 /* Begin PBXBuildFile section */
 		B42772662660421E007FA7E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42772652660421E007FA7E5 /* AppDelegate.swift */; };
 		B42772682660421E007FA7E5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42772672660421E007FA7E5 /* SceneDelegate.swift */; };
-		B427726A2660421E007FA7E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42772692660421E007FA7E5 /* ViewController.swift */; };
 		B427726D2660421E007FA7E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B427726B2660421E007FA7E5 /* Main.storyboard */; };
 		B427726F26604221007FA7E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B427726E26604221007FA7E5 /* Assets.xcassets */; };
 		B427727226604221007FA7E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B427727026604221007FA7E5 /* LaunchScreen.storyboard */; };
 		B427727E266060CF007FA7E5 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B427727D266060CF007FA7E5 /* OnboardingViewController.swift */; };
+		B4277283266065CA007FA7E5 /* UIView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4277282266065CA007FA7E5 /* UIView + Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B42772622660421E007FA7E5 /* Foodie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foodie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B42772652660421E007FA7E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B42772672660421E007FA7E5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B42772692660421E007FA7E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B427726C2660421E007FA7E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B427726E26604221007FA7E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B427727126604221007FA7E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B427727326604221007FA7E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B427727D266060CF007FA7E5 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		B4277282266065CA007FA7E5 /* UIView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +62,9 @@
 				B427727926605ECE007FA7E5 /* Models */,
 				B427727A26605EE6007FA7E5 /* Views */,
 				B427727B26605F1E007FA7E5 /* CustomViews */,
-				B42772692660421E007FA7E5 /* ViewController.swift */,
 				B427726B2660421E007FA7E5 /* Main.storyboard */,
 				B427727026604221007FA7E5 /* LaunchScreen.storyboard */,
+				B42772812660658C007FA7E5 /* Extensions */,
 				B42772802660614E007FA7E5 /* Resources */,
 			);
 			path = Foodie;
@@ -116,6 +116,14 @@
 				B427727326604221007FA7E5 /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		B42772812660658C007FA7E5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B4277282266065CA007FA7E5 /* UIView + Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,7 +196,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B427726A2660421E007FA7E5 /* ViewController.swift in Sources */,
+				B4277283266065CA007FA7E5 /* UIView + Extension.swift in Sources */,
 				B42772662660421E007FA7E5 /* AppDelegate.swift in Sources */,
 				B42772682660421E007FA7E5 /* SceneDelegate.swift in Sources */,
 				B427727E266060CF007FA7E5 /* OnboardingViewController.swift in Sources */,
