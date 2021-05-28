@@ -7,11 +7,8 @@
 
 import UIKit
 
-struct OnboardingSlide {
+struct OnboardingSlideModel {
     var title: String
     var description: String
     var image: UIImage
-
-
-    
 }

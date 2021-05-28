@@ -14,9 +14,10 @@
 		B427727226604221007FA7E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B427727026604221007FA7E5 /* LaunchScreen.storyboard */; };
 		B427727E266060CF007FA7E5 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B427727D266060CF007FA7E5 /* OnboardingViewController.swift */; };
 		B4277283266065CA007FA7E5 /* UIView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4277282266065CA007FA7E5 /* UIView + Extension.swift */; };
-		B4277285266067A3007FA7E5 /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4277284266067A3007FA7E5 /* OnboardingSlide.swift */; };
+		B4277285266067A3007FA7E5 /* OnboardingSlideModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4277284266067A3007FA7E5 /* OnboardingSlideModel.swift */; };
 		B427728826606828007FA7E5 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B427728726606828007FA7E5 /* OnboardingViewModel.swift */; };
 		B427728A26606B2F007FA7E5 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B427728926606B2F007FA7E5 /* OnboardingCollectionViewCell.swift */; };
+		B427730526618486007FA7E5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B427730426618486007FA7E5 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,9 +30,10 @@
 		B427727326604221007FA7E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B427727D266060CF007FA7E5 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		B4277282266065CA007FA7E5 /* UIView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extension.swift"; sourceTree = "<group>"; };
-		B4277284266067A3007FA7E5 /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
+		B4277284266067A3007FA7E5 /* OnboardingSlideModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlideModel.swift; sourceTree = "<group>"; };
 		B427728726606828007FA7E5 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		B427728926606B2F007FA7E5 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
+		B427730426618486007FA7E5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +82,7 @@
 		B427727926605ECE007FA7E5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				B4277284266067A3007FA7E5 /* OnboardingSlide.swift */,
+				B4277284266067A3007FA7E5 /* OnboardingSlideModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -88,6 +90,7 @@
 		B427727A26605EE6007FA7E5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B42773032661846E007FA7E5 /* Home */,
 				B427727C2660609E007FA7E5 /* Onboarding */,
 			);
 			path = Views;
@@ -141,6 +144,14 @@
 				B427728726606828007FA7E5 /* OnboardingViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B42773032661846E007FA7E5 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B427730426618486007FA7E5 /* HomeViewController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,9 +224,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4277285266067A3007FA7E5 /* OnboardingSlide.swift in Sources */,
+				B4277285266067A3007FA7E5 /* OnboardingSlideModel.swift in Sources */,
 				B427728826606828007FA7E5 /* OnboardingViewModel.swift in Sources */,
 				B4277283266065CA007FA7E5 /* UIView + Extension.swift in Sources */,
+				B427730526618486007FA7E5 /* HomeViewController.swift in Sources */,
 				B42772662660421E007FA7E5 /* AppDelegate.swift in Sources */,
 				B42772682660421E007FA7E5 /* SceneDelegate.swift in Sources */,
 				B427728A26606B2F007FA7E5 /* OnboardingCollectionViewCell.swift in Sources */,

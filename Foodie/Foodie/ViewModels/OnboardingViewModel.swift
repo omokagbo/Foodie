@@ -9,6 +9,6 @@ import Foundation
 
 struct OnboardingViewModel {
     
-    var slides: [OnboardingSlide] = []
+    var slides: [OnboardingSlideModel] = []
     
 }
