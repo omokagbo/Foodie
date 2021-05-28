@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,6 +20,8 @@
 		B427730526618486007FA7E5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B427730426618486007FA7E5 /* HomeViewController.swift */; };
 		B427730A2661A1B6007FA7E5 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42773082661A1B6007FA7E5 /* CategoryCollectionViewCell.swift */; };
 		B427730B2661A1B6007FA7E5 /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B42773092661A1B6007FA7E5 /* CategoryCollectionViewCell.xib */; };
+		B427730D2661A582007FA7E5 /* DishCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B427730C2661A582007FA7E5 /* DishCategory.swift */; };
+		B42773102661A873007FA7E5 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = B427730F2661A873007FA7E5 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,7 @@
 		B427730426618486007FA7E5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B42773082661A1B6007FA7E5 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		B42773092661A1B6007FA7E5 /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		B427730C2661A582007FA7E5 /* DishCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishCategory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B42773102661A873007FA7E5 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				B4277284266067A3007FA7E5 /* OnboardingSlideModel.swift */,
+				B427730C2661A582007FA7E5 /* DishCategory.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -192,6 +197,9 @@
 			dependencies = (
 			);
 			name = Foodie;
+			packageProductDependencies = (
+				B427730F2661A873007FA7E5 /* Kingfisher */,
+			);
 			productName = Foodie;
 			productReference = B42772622660421E007FA7E5 /* Foodie.app */;
 			productType = "com.apple.product-type.application";
@@ -219,6 +227,9 @@
 				Base,
 			);
 			mainGroup = B42772592660421E007FA7E5;
+			packageReferences = (
+				B427730E2661A873007FA7E5 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = B42772632660421E007FA7E5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -248,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4277285266067A3007FA7E5 /* OnboardingSlideModel.swift in Sources */,
+				B427730D2661A582007FA7E5 /* DishCategory.swift in Sources */,
 				B427728826606828007FA7E5 /* OnboardingViewModel.swift in Sources */,
 				B4277283266065CA007FA7E5 /* UIView + Extension.swift in Sources */,
 				B427730526618486007FA7E5 /* HomeViewController.swift in Sources */,
@@ -457,6 +469,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B427730E2661A873007FA7E5 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B427730F2661A873007FA7E5 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B427730E2661A873007FA7E5 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B427725A2660421E007FA7E5 /* Project object */;
 }
