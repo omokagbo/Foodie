@@ -6,20 +6,22 @@
 //
 
 import UIKit
+import Kingfisher
 
 class CategoryCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var categoryImgView: UIImageView!
     @IBOutlet weak var categoryTitleLbl: UILabel!
     
+    static let identifier = "CategoryCollectionViewCell"
 
     override func awakeFromNib() {
         super.awakeFromNib()
     }
     
     func setup(_ category: DishCategory) {
-        categoryImgView.image = UIImage(named: category.image)
         categoryTitleLbl.text = category.name
+        categoryImgView.kf.setImage(with: category.image.asURL)
     }
 
 }
