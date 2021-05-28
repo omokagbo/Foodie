@@ -13,4 +13,8 @@ extension UIView {
         get { return self.cornerRadius }
         set { self.layer.cornerRadius = newValue }
     }
+    
+    public var identifier: String {
+        return String(describing: self)
+    }
 }

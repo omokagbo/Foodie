@@ -27,7 +27,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="WJ9-bD-thE">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OnboardingCollectionViewCell" id="WJ9-bD-thE" customClass="OnboardingCollectionViewCell" customModule="Foodie" customModuleProvider="target">
                                         <rect key="frame" x="2" y="0.0" width="410" height="681"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Rob-7Y-Jmq">
@@ -66,8 +66,17 @@
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="410" height="681"/>
+                                        <connections>
+                                            <outlet property="slideDescriptionLbl" destination="vZM-K6-9od" id="xpV-xV-MZb"/>
+                                            <outlet property="slideImageView" destination="vgf-uE-Tkd" id="bgx-y5-Vps"/>
+                                            <outlet property="slideTitleLbl" destination="RJm-nz-Y8O" id="GKq-11-9Yr"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="8dw-XY-wxv"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="buG-wu-g3p"/>
+                                </connections>
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rf6-9z-gzJ">
                                 <rect key="frame" x="132" y="772" width="150" height="50"/>
