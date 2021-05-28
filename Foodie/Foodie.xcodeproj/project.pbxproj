@@ -18,6 +18,8 @@
 		B427728826606828007FA7E5 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B427728726606828007FA7E5 /* OnboardingViewModel.swift */; };
 		B427728A26606B2F007FA7E5 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B427728926606B2F007FA7E5 /* OnboardingCollectionViewCell.swift */; };
 		B427730526618486007FA7E5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B427730426618486007FA7E5 /* HomeViewController.swift */; };
+		B427730A2661A1B6007FA7E5 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42773082661A1B6007FA7E5 /* CategoryCollectionViewCell.swift */; };
+		B427730B2661A1B6007FA7E5 /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B42773092661A1B6007FA7E5 /* CategoryCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		B427728726606828007FA7E5 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		B427728926606B2F007FA7E5 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 		B427730426618486007FA7E5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B42773082661A1B6007FA7E5 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		B42773092661A1B6007FA7E5 /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 		B427727B26605F1E007FA7E5 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				B42773062661A149007FA7E5 /* CollectionViewCells */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -152,6 +157,23 @@
 				B427730426618486007FA7E5 /* HomeViewController.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		B42773062661A149007FA7E5 /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				B42773072661A181007FA7E5 /* CategoryCollectionViewCell */,
+			);
+			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		B42773072661A181007FA7E5 /* CategoryCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				B42773082661A1B6007FA7E5 /* CategoryCollectionViewCell.swift */,
+				B42773092661A1B6007FA7E5 /* CategoryCollectionViewCell.xib */,
+			);
+			path = CategoryCollectionViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,6 +233,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B427730B2661A1B6007FA7E5 /* CategoryCollectionViewCell.xib in Resources */,
 				B427727226604221007FA7E5 /* LaunchScreen.storyboard in Resources */,
 				B427726F26604221007FA7E5 /* Assets.xcassets in Resources */,
 				B427726D2660421E007FA7E5 /* Main.storyboard in Resources */,
@@ -228,6 +251,7 @@
 				B427728826606828007FA7E5 /* OnboardingViewModel.swift in Sources */,
 				B4277283266065CA007FA7E5 /* UIView + Extension.swift in Sources */,
 				B427730526618486007FA7E5 /* HomeViewController.swift in Sources */,
+				B427730A2661A1B6007FA7E5 /* CategoryCollectionViewCell.swift in Sources */,
 				B42772662660421E007FA7E5 /* AppDelegate.swift in Sources */,
 				B42772682660421E007FA7E5 /* SceneDelegate.swift in Sources */,
 				B427728A26606B2F007FA7E5 /* OnboardingCollectionViewCell.swift in Sources */,
