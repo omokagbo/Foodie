@@ -23,6 +23,7 @@
 		B427730D2661A582007FA7E5 /* DishCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B427730C2661A582007FA7E5 /* DishCategory.swift */; };
 		B42773102661A873007FA7E5 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = B427730F2661A873007FA7E5 /* Kingfisher */; };
 		B42773122661ABBB007FA7E5 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42773112661ABBB007FA7E5 /* String+Extension.swift */; };
+		B42773152661C7AE007FA7E5 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42773142661C7AE007FA7E5 /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		B42773092661A1B6007FA7E5 /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		B427730C2661A582007FA7E5 /* DishCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishCategory.swift; sourceTree = "<group>"; };
 		B42773112661ABBB007FA7E5 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		B42773142661C7AE007FA7E5 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,8 +83,7 @@
 				B427727A26605EE6007FA7E5 /* Views */,
 				B4277286266067FC007FA7E5 /* ViewModels */,
 				B427727B26605F1E007FA7E5 /* CustomViews */,
-				B427726B2660421E007FA7E5 /* Main.storyboard */,
-				B427727026604221007FA7E5 /* LaunchScreen.storyboard */,
+				B49A4EBA266A3059003E9087 /* Storyboards */,
 				B42772812660658C007FA7E5 /* Extensions */,
 				B42772802660614E007FA7E5 /* Resources */,
 			);
@@ -110,6 +111,7 @@
 		B427727B26605F1E007FA7E5 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				B42773132661C793007FA7E5 /* CardView */,
 				B42773062661A149007FA7E5 /* CollectionViewCells */,
 			);
 			path = CustomViews;
@@ -182,6 +184,23 @@
 				B42773092661A1B6007FA7E5 /* CategoryCollectionViewCell.xib */,
 			);
 			path = CategoryCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		B42773132661C793007FA7E5 /* CardView */ = {
+			isa = PBXGroup;
+			children = (
+				B42773142661C7AE007FA7E5 /* CardView.swift */,
+			);
+			path = CardView;
+			sourceTree = "<group>";
+		};
+		B49A4EBA266A3059003E9087 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B427726B2660421E007FA7E5 /* Main.storyboard */,
+				B427727026604221007FA7E5 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +290,7 @@
 				B42772662660421E007FA7E5 /* AppDelegate.swift in Sources */,
 				B42772682660421E007FA7E5 /* SceneDelegate.swift in Sources */,
 				B427728A26606B2F007FA7E5 /* OnboardingCollectionViewCell.swift in Sources */,
+				B42773152661C7AE007FA7E5 /* CardView.swift in Sources */,
 				B427727E266060CF007FA7E5 /* OnboardingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
