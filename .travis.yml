@@ -1,3 +1,7 @@
 os: osx
 language: swift
 osx_image: xcode12.5
+script: 'xcodebuild clean test -project Foodie.xcodeproj -scheme "Foodie" -sdk iphonesimulator -destination "platform=iOS Simulator,OS=14.5,name=iPhone X" ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO'
+xcode_project: Users/decagon/Desktop/Foodie/Foodie/Foodie.xcodeproj
+xcode_scheme: Users/decagon/Desktop/Foodie/Foodie/FoodieTests
+xcode_destination: platform=iOS Simulator,OS=11.3,name=iPhone X
