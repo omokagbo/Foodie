@@ -25,6 +25,7 @@
 		B42773152661C7AE007FA7E5 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42773142661C7AE007FA7E5 /* CardView.swift */; };
 		B49A4EC2266A518B003E9087 /* FoodieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49A4EC1266A518B003E9087 /* FoodieTests.swift */; };
 		B49A4ED3266A5E41003E9087 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49A4ED2266A5E41003E9087 /* HomeViewController.swift */; };
+		B49A4EE5266AA10F003E9087 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B49A4EE4266AA10F003E9087 /* IQKeyboardManagerSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B42773102661A873007FA7E5 /* Kingfisher in Frameworks */,
+				B49A4EE5266AA10F003E9087 /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +255,7 @@
 			name = Foodie;
 			packageProductDependencies = (
 				B427730F2661A873007FA7E5 /* Kingfisher */,
+				B49A4EE4266AA10F003E9087 /* IQKeyboardManagerSwift */,
 			);
 			productName = Foodie;
 			productReference = B42772622660421E007FA7E5 /* Foodie.app */;
@@ -305,6 +308,7 @@
 			mainGroup = B42772592660421E007FA7E5;
 			packageReferences = (
 				B427730E2661A873007FA7E5 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				B49A4EE3266AA10F003E9087 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 			);
 			productRefGroup = B42772632660421E007FA7E5 /* Products */;
 			projectDirPath = "";
@@ -630,6 +634,14 @@
 				minimumVersion = 6.3.0;
 			};
 		};
+		B49A4EE3266AA10F003E9087 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.6;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -637,6 +649,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B427730E2661A873007FA7E5 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		B49A4EE4266AA10F003E9087 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B49A4EE3266AA10F003E9087 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
