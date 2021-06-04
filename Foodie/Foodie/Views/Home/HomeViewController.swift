@@ -42,9 +42,7 @@ extension HomeViewController: UICollectionViewDataSource {
         return cell
     }
     
-    
 }
 
 extension HomeViewController: UICollectionViewDelegate {
-    
 }
