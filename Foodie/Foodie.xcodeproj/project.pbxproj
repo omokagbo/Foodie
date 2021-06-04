@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A65E28B5F4D5FF47F357BB80 /* Pods_Foodie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA0CEEB271BC3482DD200EE5 /* Pods_Foodie.framework */; };
 		B42772662660421E007FA7E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42772652660421E007FA7E5 /* AppDelegate.swift */; };
 		B42772682660421E007FA7E5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42772672660421E007FA7E5 /* SceneDelegate.swift */; };
 		B427726D2660421E007FA7E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B427726B2660421E007FA7E5 /* Main.storyboard */; };
@@ -21,11 +22,13 @@
 		B427730A2661A1B6007FA7E5 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42773082661A1B6007FA7E5 /* CategoryCollectionViewCell.swift */; };
 		B427730B2661A1B6007FA7E5 /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B42773092661A1B6007FA7E5 /* CategoryCollectionViewCell.xib */; };
 		B427730D2661A582007FA7E5 /* DishCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B427730C2661A582007FA7E5 /* DishCategory.swift */; };
-		B42773102661A873007FA7E5 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = B427730F2661A873007FA7E5 /* Kingfisher */; };
+		B42773102661A873007FA7E5 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = B427730F2661A873007FA7E5 /* SwiftPackageProductDependency */; };
 		B42773122661ABBB007FA7E5 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42773112661ABBB007FA7E5 /* String+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		61E786783F89F2F1714178AF /* Pods-Foodie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foodie.release.xcconfig"; path = "Target Support Files/Pods-Foodie/Pods-Foodie.release.xcconfig"; sourceTree = "<group>"; };
+		6C9EB755EA3118F91429ECE4 /* Pods-Foodie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foodie.debug.xcconfig"; path = "Target Support Files/Pods-Foodie/Pods-Foodie.debug.xcconfig"; sourceTree = "<group>"; };
 		B42772622660421E007FA7E5 /* Foodie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foodie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B42772652660421E007FA7E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B42772672660421E007FA7E5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +46,7 @@
 		B42773092661A1B6007FA7E5 /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		B427730C2661A582007FA7E5 /* DishCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishCategory.swift; sourceTree = "<group>"; };
 		B42773112661ABBB007FA7E5 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		BA0CEEB271BC3482DD200EE5 /* Pods_Foodie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Foodie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,18 +54,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B42773102661A873007FA7E5 /* Kingfisher in Frameworks */,
+				B42773102661A873007FA7E5 /* BuildFile in Frameworks */,
+				A65E28B5F4D5FF47F357BB80 /* Pods_Foodie.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08F319222A3F8A19FB07F2E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA0CEEB271BC3482DD200EE5 /* Pods_Foodie.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		143E88B396863777F7B3F9EB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6C9EB755EA3118F91429ECE4 /* Pods-Foodie.debug.xcconfig */,
+				61E786783F89F2F1714178AF /* Pods-Foodie.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B42772592660421E007FA7E5 = {
 			isa = PBXGroup;
 			children = (
 				B42772642660421E007FA7E5 /* Foodie */,
 				B42772632660421E007FA7E5 /* Products */,
+				143E88B396863777F7B3F9EB /* Pods */,
+				08F319222A3F8A19FB07F2E7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,8 +106,7 @@
 				B427727A26605EE6007FA7E5 /* Views */,
 				B4277286266067FC007FA7E5 /* ViewModels */,
 				B427727B26605F1E007FA7E5 /* CustomViews */,
-				B427726B2660421E007FA7E5 /* Main.storyboard */,
-				B427727026604221007FA7E5 /* LaunchScreen.storyboard */,
+				B49A4ED4266A9C21003E9087 /* Storyboards */,
 				B42772812660658C007FA7E5 /* Extensions */,
 				B42772802660614E007FA7E5 /* Resources */,
 			);
@@ -184,6 +208,15 @@
 			path = CategoryCollectionViewCell;
 			sourceTree = "<group>";
 		};
+		B49A4ED4266A9C21003E9087 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B427726B2660421E007FA7E5 /* Main.storyboard */,
+				B427727026604221007FA7E5 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -191,9 +224,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B427727626604221007FA7E5 /* Build configuration list for PBXNativeTarget "Foodie" */;
 			buildPhases = (
+				9DE8F35CC41572C3085517AD /* [CP] Check Pods Manifest.lock */,
 				B427725E2660421E007FA7E5 /* Sources */,
 				B427725F2660421E007FA7E5 /* Frameworks */,
 				B42772602660421E007FA7E5 /* Resources */,
+				782F8B85C71A678605600252 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -201,7 +236,7 @@
 			);
 			name = Foodie;
 			packageProductDependencies = (
-				B427730F2661A873007FA7E5 /* Kingfisher */,
+				B427730F2661A873007FA7E5 /* SwiftPackageProductDependency */,
 			);
 			productName = Foodie;
 			productReference = B42772622660421E007FA7E5 /* Foodie.app */;
@@ -231,7 +266,7 @@
 			);
 			mainGroup = B42772592660421E007FA7E5;
 			packageReferences = (
-				B427730E2661A873007FA7E5 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				B427730E2661A873007FA7E5 /* RemoteSwiftPackageReference */,
 			);
 			productRefGroup = B42772632660421E007FA7E5 /* Products */;
 			projectDirPath = "";
@@ -255,6 +290,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		782F8B85C71A678605600252 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Foodie/Pods-Foodie-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Foodie/Pods-Foodie-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Foodie/Pods-Foodie-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DE8F35CC41572C3085517AD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Foodie-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B427725E2660421E007FA7E5 /* Sources */ = {
@@ -415,6 +492,7 @@
 		};
 		B427727726604221007FA7E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C9EB755EA3118F91429ECE4 /* Pods-Foodie.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -434,6 +512,7 @@
 		};
 		B427727826604221007FA7E5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61E786783F89F2F1714178AF /* Pods-Foodie.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -475,7 +554,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		B427730E2661A873007FA7E5 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+		B427730E2661A873007FA7E5 /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher";
 			requirement = {
@@ -486,9 +565,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		B427730F2661A873007FA7E5 /* Kingfisher */ = {
+		B427730F2661A873007FA7E5 /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = B427730E2661A873007FA7E5 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			package = B427730E2661A873007FA7E5 /* RemoteSwiftPackageReference */;
 			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
