@@ -25,6 +25,7 @@
 		B42773122661ABBB007FA7E5 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42773112661ABBB007FA7E5 /* String+Extension.swift */; };
 		B42773152661C7AE007FA7E5 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42773142661C7AE007FA7E5 /* CardView.swift */; };
 		B49A4EC2266A518B003E9087 /* FoodieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49A4EC1266A518B003E9087 /* FoodieTests.swift */; };
+		B49A4ECE266A58EB003E9087 /* PopularDishesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49A4ECD266A58EB003E9087 /* PopularDishesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		B49A4EBF266A518B003E9087 /* FoodieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B49A4EC1266A518B003E9087 /* FoodieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodieTests.swift; sourceTree = "<group>"; };
 		B49A4EC3266A518B003E9087 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B49A4ECD266A58EB003E9087 /* PopularDishesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularDishesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 		B427727A26605EE6007FA7E5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B49A4ECC266A58D4003E9087 /* PopularDishes */,
 				B42773032661846E007FA7E5 /* Home */,
 				B427727C2660609E007FA7E5 /* Onboarding */,
 			);
@@ -233,6 +236,14 @@
 				B49A4EC3266A518B003E9087 /* Info.plist */,
 			);
 			path = FoodieTests;
+			sourceTree = "<group>";
+		};
+		B49A4ECC266A58D4003E9087 /* PopularDishes */ = {
+			isa = PBXGroup;
+			children = (
+				B49A4ECD266A58EB003E9087 /* PopularDishesViewController.swift */,
+			);
+			path = PopularDishes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -354,6 +365,7 @@
 				B427728A26606B2F007FA7E5 /* OnboardingCollectionViewCell.swift in Sources */,
 				B42773152661C7AE007FA7E5 /* CardView.swift in Sources */,
 				B427727E266060CF007FA7E5 /* OnboardingViewController.swift in Sources */,
+				B49A4ECE266A58EB003E9087 /* PopularDishesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

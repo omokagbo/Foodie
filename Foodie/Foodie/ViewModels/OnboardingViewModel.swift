@@ -8,7 +8,5 @@
 import Foundation
 
 struct OnboardingViewModel {
-    
     var slides: [OnboardingSlideModel] = []
-    
 }
