@@ -8,7 +8,7 @@
 import UIKit
 
 class OnboardingViewController: UIViewController {
-
+    
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var pageControl: UIPageControl!
@@ -28,6 +28,7 @@ class OnboardingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        slides = viewModel.slides
         pageControl.numberOfPages = viewModel.slides.count
     }
     
@@ -44,10 +45,15 @@ class OnboardingViewController: UIViewController {
         }
     }
     
+    @IBAction func skipButtonTapped(_ sender: UIButton) {
+        guard let homeNC = storyboard?.instantiateViewController(withIdentifier: "HomeNC") as? UINavigationController else { return }
+        homeNC.modalPresentationStyle = .fullScreen
+        homeNC.modalTransitionStyle = .flipHorizontal
+        present(homeNC, animated: true, completion: nil)
+    }
 }
 
 extension OnboardingViewController: UICollectionViewDataSource {
-    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return viewModel.slides.count
     }
@@ -57,16 +63,13 @@ extension OnboardingViewController: UICollectionViewDataSource {
         cell.setup(viewModel.slides[indexPath.row])
         return cell
     }
-    
 }
 
 extension OnboardingViewController: UICollectionViewDelegate {
-    
 }
 
 
 extension OnboardingViewController: UICollectionViewDelegateFlowLayout {
-    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
     }
@@ -75,5 +78,4 @@ extension OnboardingViewController: UICollectionViewDelegateFlowLayout {
         let width = scrollView.frame.width
         currentPage = Int(scrollView.contentOffset.x / width)
     }
-    
 }

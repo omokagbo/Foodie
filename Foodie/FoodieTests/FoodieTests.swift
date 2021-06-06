@@ -2,7 +2,7 @@
 //  FoodieTests.swift
 //  FoodieTests
 //
-//  Created by Decagon on 04/06/2021.
+//  Created by omokagbo on 04/06/2021.
 //
 
 import XCTest

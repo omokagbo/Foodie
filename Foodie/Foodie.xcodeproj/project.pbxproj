@@ -26,6 +26,9 @@
 		B49A4EC2266A518B003E9087 /* FoodieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49A4EC1266A518B003E9087 /* FoodieTests.swift */; };
 		B49A4ED3266A5E41003E9087 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49A4ED2266A5E41003E9087 /* HomeViewController.swift */; };
 		B49A4EE5266AA10F003E9087 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B49A4EE4266AA10F003E9087 /* IQKeyboardManagerSwift */; };
+		B49A4F29266CFBE3003E9087 /* PopularDishesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49A4F27266CFBE3003E9087 /* PopularDishesCollectionViewCell.swift */; };
+		B49A4F2A266CFBE3003E9087 /* PopularDishesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B49A4F28266CFBE3003E9087 /* PopularDishesCollectionViewCell.xib */; };
+		B49A4F2C266CFEA1003E9087 /* PopularDish.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49A4F2B266CFEA1003E9087 /* PopularDish.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +63,9 @@
 		B49A4EC1266A518B003E9087 /* FoodieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodieTests.swift; sourceTree = "<group>"; };
 		B49A4EC3266A518B003E9087 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B49A4ED2266A5E41003E9087 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B49A4F27266CFBE3003E9087 /* PopularDishesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularDishesCollectionViewCell.swift; sourceTree = "<group>"; };
+		B49A4F28266CFBE3003E9087 /* PopularDishesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopularDishesCollectionViewCell.xib; sourceTree = "<group>"; };
+		B49A4F2B266CFEA1003E9087 /* PopularDish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularDish.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +126,7 @@
 			children = (
 				B4277284266067A3007FA7E5 /* OnboardingSlideModel.swift */,
 				B427730C2661A582007FA7E5 /* DishCategory.swift */,
+				B49A4F2B266CFEA1003E9087 /* PopularDish.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -189,6 +196,7 @@
 		B42773062661A149007FA7E5 /* CollectionViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				B49A4F26266CFBAD003E9087 /* PopularDishesCollectionViewCell */,
 				B42773072661A181007FA7E5 /* CategoryCollectionViewCell */,
 			);
 			path = CollectionViewCells;
@@ -235,6 +243,15 @@
 				B49A4ED2266A5E41003E9087 /* HomeViewController.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		B49A4F26266CFBAD003E9087 /* PopularDishesCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				B49A4F27266CFBE3003E9087 /* PopularDishesCollectionViewCell.swift */,
+				B49A4F28266CFBE3003E9087 /* PopularDishesCollectionViewCell.xib */,
+			);
+			path = PopularDishesCollectionViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,6 +343,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B427730B2661A1B6007FA7E5 /* CategoryCollectionViewCell.xib in Resources */,
+				B49A4F2A266CFBE3003E9087 /* PopularDishesCollectionViewCell.xib in Resources */,
 				B427727226604221007FA7E5 /* LaunchScreen.storyboard in Resources */,
 				B427726F26604221007FA7E5 /* Assets.xcassets in Resources */,
 				B427726D2660421E007FA7E5 /* Main.storyboard in Resources */,
@@ -346,8 +364,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B49A4F29266CFBE3003E9087 /* PopularDishesCollectionViewCell.swift in Sources */,
 				B4277285266067A3007FA7E5 /* OnboardingSlideModel.swift in Sources */,
 				B42773122661ABBB007FA7E5 /* String+Extension.swift in Sources */,
+				B49A4F2C266CFEA1003E9087 /* PopularDish.swift in Sources */,
 				B427730D2661A582007FA7E5 /* DishCategory.swift in Sources */,
 				B427728826606828007FA7E5 /* OnboardingViewModel.swift in Sources */,
 				B4277283266065CA007FA7E5 /* UIView + Extension.swift in Sources */,
