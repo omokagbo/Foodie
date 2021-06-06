@@ -2,7 +2,7 @@
 //  String+Extension.swift
 //  Foodie
 //
-//  Created by Decagon on 28/05/2021.
+//  Created by omokagbo on 28/05/2021.
 //
 
 import Foundation

@@ -2,7 +2,7 @@
 //  CategoryCollectionViewCell.swift
 //  Foodie
 //
-//  Created by Decagon on 28/05/2021.
+//  Created by omokagbo on 28/05/2021.
 //
 
 import UIKit
@@ -21,7 +21,7 @@ class CategoryCollectionViewCell: UICollectionViewCell {
     
     func setup(_ category: DishCategory) {
         categoryTitleLbl.text = category.name
-        categoryImgView.kf.setImage(with: category.image.asURL)
+        categoryImgView.kf.setImage(with: category.image?.asURL)
     }
 
 }
