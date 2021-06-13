@@ -12,6 +12,7 @@ class OnboardingViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var pageControl: UIPageControl!
+    @IBOutlet weak var skipButton: UIButton!
     private var viewModel = OnboardingViewModel()
     var slides: [OnboardingSlideModel] = []
     
@@ -34,6 +35,7 @@ class OnboardingViewController: UIViewController {
     
     @IBAction func nextButtonClicked(_ sender: UIButton) {
         if currentPage == viewModel.slides.count - 1 {
+            self.skipButton.isHidden = true
             guard let homeNC = storyboard?.instantiateViewController(withIdentifier: "HomeNC") as? UINavigationController else { return }
             homeNC.modalPresentationStyle = .fullScreen
             homeNC.modalTransitionStyle = .flipHorizontal
