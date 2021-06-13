@@ -91,11 +91,14 @@ extension HomeViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
         if collectionView == foodCategoryCollectionView {
-            
+            let controller = DishListViewController.instantiate(storyboardName: "DishList")
+            navigationController?.modalPresentationStyle = .fullScreen
+            controller.category = categories[indexPath.row]
+            navigationController?.pushViewController(controller, animated: true)
         } else {
             let controller = HomeDetailsViewController.instantiate(storyboardName: "HomeDetails")
             navigationController?.modalPresentationStyle = .fullScreen
-            navigationController?.modalTransitionStyle = .partialCurl
+            controller.dish = collectionView == popularDishesCollectionView ? popularDishes[indexPath.row] : specialDishes[indexPath.row]
             navigationController?.pushViewController(controller, animated: true)
         }
     }
