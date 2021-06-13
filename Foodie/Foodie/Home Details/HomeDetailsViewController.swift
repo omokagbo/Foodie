@@ -16,11 +16,15 @@ class HomeDetailsViewController: UIViewController {
     @IBOutlet weak var nameField: UITextField!
     @IBOutlet weak var orderButton: UIButton!
     
-    var dish: PopularDish?
+
+    var dish: PopularDish!
+    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         populateView()
+
     }
     
     private func populateView() {
@@ -33,5 +37,11 @@ class HomeDetailsViewController: UIViewController {
     @IBAction func placeOrderBtnTapped(_ sender: UIButton) {
     }
     
+    private func populateView() {
+        dishImageView.kf.setImage(with: dish.image?.asURL)
+        dishNameLbl.text = dish.name
+        caloriesLbl.text = dish.formattedCalories
+        dishDescription.text = dish.description
+    }
 
 }
