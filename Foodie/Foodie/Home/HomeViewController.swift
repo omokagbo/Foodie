@@ -97,8 +97,10 @@ extension HomeViewController: UICollectionViewDelegate {
             navigationController?.pushViewController(controller, animated: true)
         } else {
             let controller = HomeDetailsViewController.instantiate(storyboardName: "HomeDetails")
+            controller.dish = collectionView == popularDishesCollectionView ? popularDishes[indexPath.row] : specialDishes[indexPath.row]
             navigationController?.modalPresentationStyle = .fullScreen
             controller.dish = collectionView == popularDishesCollectionView ? popularDishes[indexPath.row] : specialDishes[indexPath.row]
+
             navigationController?.pushViewController(controller, animated: true)
         }
     }

@@ -17,7 +17,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oUK-dx-kwa">
+
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="580"/>
+
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Hfp-Bi-H1R">
                                 <rect key="frame" x="16" y="596" width="382" height="250"/>
@@ -80,7 +82,9 @@
                                     </button>
                                 </subviews>
                                 <constraints>
+
                                     <constraint firstAttribute="height" constant="250" id="H0q-PI-WkH"/>
+
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -92,7 +96,7 @@
                             <constraint firstItem="Hfp-Bi-H1R" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="AY6-3a-bYS"/>
                             <constraint firstItem="Hfp-Bi-H1R" firstAttribute="top" secondItem="oUK-dx-kwa" secondAttribute="bottom" constant="16" id="Qgp-77-OwW"/>
                             <constraint firstItem="oUK-dx-kwa" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="kwm-bn-3oT"/>
-                            <constraint firstItem="oUK-dx-kwa" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="oW7-rZ-sCZ"/>
+                            <constraint firstItem="oUK-dx-kwa" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="oW7-rZ-sCZ"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Hfp-Bi-H1R" secondAttribute="bottom" constant="16" id="uvn-ci-wrL"/>
                         </constraints>
                     </view>
