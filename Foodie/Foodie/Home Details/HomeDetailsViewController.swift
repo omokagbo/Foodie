@@ -36,12 +36,4 @@ class HomeDetailsViewController: UIViewController {
     
     @IBAction func placeOrderBtnTapped(_ sender: UIButton) {
     }
-    
-    private func populateView() {
-        dishImageView.kf.setImage(with: dish.image?.asURL)
-        dishNameLbl.text = dish.name
-        caloriesLbl.text = dish.formattedCalories
-        dishDescription.text = dish.description
-    }
-
 }
