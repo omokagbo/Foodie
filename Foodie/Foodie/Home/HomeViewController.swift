@@ -92,11 +92,10 @@ extension HomeViewController: UICollectionViewDelegate {
         collectionView.deselectItem(at: indexPath, animated: true)
         if collectionView == foodCategoryCollectionView {
             
-        } else if collectionView == popularDishesCollectionView {
+        } else {
             let controller = HomeDetailsViewController.instantiate(storyboardName: "HomeDetails")
             navigationController?.modalPresentationStyle = .fullScreen
             navigationController?.modalTransitionStyle = .partialCurl
-//            navigationController?.present(controller, animated: true, completion: nil)
             navigationController?.pushViewController(controller, animated: true)
         }
     }
