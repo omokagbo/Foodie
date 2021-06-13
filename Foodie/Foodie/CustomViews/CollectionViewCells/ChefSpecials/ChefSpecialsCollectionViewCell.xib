@@ -79,6 +79,7 @@
             <size key="customSize" width="330" height="96"/>
             <connections>
                 <outlet property="caloriesLbl" destination="lSJ-In-zKU" id="1Aa-tZ-1e0"/>
+                <outlet property="descriptionLbl" destination="olj-vR-n1b" id="AEs-eQ-LzP"/>
                 <outlet property="dishImageView" destination="hbS-aH-U8o" id="cJ5-iK-yLB"/>
                 <outlet property="titleLbl" destination="hmu-LY-dNB" id="MJT-sy-Q8I"/>
             </connections>

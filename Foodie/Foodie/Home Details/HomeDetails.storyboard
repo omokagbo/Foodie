@@ -17,7 +17,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oUK-dx-kwa">
-                                <rect key="frame" x="0.0" y="44" width="414" height="536"/>
+
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="580"/>
+
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Hfp-Bi-H1R">
                                 <rect key="frame" x="16" y="596" width="382" height="250"/>
@@ -80,7 +82,9 @@
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="250" id="aO6-Je-GAh"/>
+
+                                    <constraint firstAttribute="height" constant="250" id="H0q-PI-WkH"/>
+
                                 </constraints>
                             </stackView>
                         </subviews>
