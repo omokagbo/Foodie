@@ -15,6 +15,8 @@
 		B4239F012676279200E05B48 /* DishListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4239EFF2676279200E05B48 /* DishListTableViewCell.xib */; };
 		B4239F0426762E7C00E05B48 /* DishListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4239F0326762E7C00E05B48 /* DishListViewController.swift */; };
 		B4239F0626762E9600E05B48 /* DishList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4239F0526762E9600E05B48 /* DishList.storyboard */; };
+		B4239F0E26768CE800E05B48 /* Orders.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4239F0D26768CE800E05B48 /* Orders.storyboard */; };
+		B4239F1026768CF400E05B48 /* OrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4239F0F26768CF400E05B48 /* OrdersViewController.swift */; };
 		B42772662660421E007FA7E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42772652660421E007FA7E5 /* AppDelegate.swift */; };
 		B42772682660421E007FA7E5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42772672660421E007FA7E5 /* SceneDelegate.swift */; };
 		B427726D2660421E007FA7E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B427726B2660421E007FA7E5 /* Main.storyboard */; };
@@ -60,6 +62,8 @@
 		B4239EFF2676279200E05B48 /* DishListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishListTableViewCell.xib; sourceTree = "<group>"; };
 		B4239F0326762E7C00E05B48 /* DishListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishListViewController.swift; sourceTree = "<group>"; };
 		B4239F0526762E9600E05B48 /* DishList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DishList.storyboard; sourceTree = "<group>"; };
+		B4239F0D26768CE800E05B48 /* Orders.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Orders.storyboard; sourceTree = "<group>"; };
+		B4239F0F26768CF400E05B48 /* OrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersViewController.swift; sourceTree = "<group>"; };
 		B42772622660421E007FA7E5 /* Foodie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foodie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B42772652660421E007FA7E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B42772672660421E007FA7E5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -143,6 +147,15 @@
 			path = DishList;
 			sourceTree = "<group>";
 		};
+		B4239F0C26768CD200E05B48 /* Orders */ = {
+			isa = PBXGroup;
+			children = (
+				B4239F0D26768CE800E05B48 /* Orders.storyboard */,
+				B4239F0F26768CF400E05B48 /* OrdersViewController.swift */,
+			);
+			path = Orders;
+			sourceTree = "<group>";
+		};
 		B42772592660421E007FA7E5 = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +182,7 @@
 				B49A4ED1266A5E33003E9087 /* Home */,
 				B4239EEE267572CB00E05B48 /* Home Details */,
 				B4239F0226762E4000E05B48 /* DishList */,
+				B4239F0C26768CD200E05B48 /* Orders */,
 				B427727926605ECE007FA7E5 /* Models */,
 				B4277286266067FC007FA7E5 /* ViewModels */,
 				B427727B26605F1E007FA7E5 /* CustomViews */,
@@ -409,6 +423,7 @@
 				B4239F012676279200E05B48 /* DishListTableViewCell.xib in Resources */,
 				B49A4F2A266CFBE3003E9087 /* PopularDishesCollectionViewCell.xib in Resources */,
 				B427727226604221007FA7E5 /* LaunchScreen.storyboard in Resources */,
+				B4239F0E26768CE800E05B48 /* Orders.storyboard in Resources */,
 				B4239EF0267572E200E05B48 /* HomeDetails.storyboard in Resources */,
 				B4239F0626762E9600E05B48 /* DishList.storyboard in Resources */,
 				B427726F26604221007FA7E5 /* Assets.xcassets in Resources */,
@@ -446,6 +461,7 @@
 				B42772682660421E007FA7E5 /* SceneDelegate.swift in Sources */,
 				B427728A26606B2F007FA7E5 /* OnboardingCollectionViewCell.swift in Sources */,
 				B42773152661C7AE007FA7E5 /* CardView.swift in Sources */,
+				B4239F1026768CF400E05B48 /* OrdersViewController.swift in Sources */,
 				B427727E266060CF007FA7E5 /* OnboardingViewController.swift in Sources */,
 				B4239EF42676176F00E05B48 /* UIViewController + Extension.swift in Sources */,
 				B49A4F30266D1ECE003E9087 /* ChefSpecialsCollectionViewCell.swift in Sources */,
