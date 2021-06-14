@@ -2,7 +2,7 @@
 //  ChefSpecialsCollectionViewCell.swift
 //  Foodie
 //
-//  Created by Decagon on 06/06/2021.
+//  Created by omokagbo on 06/06/2021.
 //
 
 import UIKit

@@ -165,6 +165,9 @@
                     <navigationItem key="navigationItem" title="Foodie" id="4GQ-CC-V5h">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="cart" catalog="system" id="GGr-8K-wbb">
                             <color key="tintColor" red="1" green="0.051106296480000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="I95-Ni-twz" kind="show" id="vSJ-Xt-FmF"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -176,6 +179,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1AZ-Og-2FL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1747.826086956522" y="89.732142857142847"/>
+        </scene>
+        <!--Orders-->
+        <scene sceneID="KAy-Bm-8XH">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="OrdersViewController" storyboardName="Orders" id="I95-Ni-twz" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="XfI-sG-qLO"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GlU-fF-4ZB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2478" y="90"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Qbl-gX-IqJ">

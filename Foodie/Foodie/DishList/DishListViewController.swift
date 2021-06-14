@@ -2,7 +2,7 @@
 //  DishListViewController.swift
 //  Foodie
 //
-//  Created by Decagon on 13/06/2021.
+//  Created by omokagbo on 13/06/2021.
 //
 
 import UIKit
