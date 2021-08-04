@@ -13,16 +13,13 @@ struct NetworkService {
     
     private init() {}
     
-    func myFirstRequest() {
-        request(route: .temp, method: .get, type: String.self) { result in
-            
-        }
+    func myFirstRequest(completion: @escaping (Result<[PopularDish], Error>) -> Void) {
+        request(route: .temp, method: .get, completion: completion)
     }
     
     private func request<T: Codable>(route: Route,
                                      method: Method,
                                      parameters: [String: Any]? = nil,
-                                     type: T.Type,
                                      completion: @escaping (Result<T, Error>) -> Void) {
         guard let request = createRequest(route: route, method: method, parameters: parameters) else {
             completion(.failure(AppError.unknownError))
@@ -33,12 +30,43 @@ struct NetworkService {
             if let data = data {
                 result = .success(data)
                 let responseString = String(data: data, encoding: .utf8)
-                print("\(responseString)")
+                print("\(responseString ?? "")")
             } else if let error = error {
                 result = .failure(error)
                 print(error.localizedDescription)
             }
+            self.handleResponse(result: result, completion: completion)
+            DispatchQueue.main.async {
+                
+            }
         }.resume()
+    }
+    
+    private func handleResponse<T: Codable>(result: Result<Data, Error>?, completion: @escaping (Result<T, Error>) -> Void) {
+        guard let result = result else {
+            completion(.failure(AppError.unknownError))
+            return
+        }
+        switch result {
+        case .success(let data):
+            do {
+                let response = try JSONDecoder().decode(ApiResponse<T>.self, from: data)
+                if let error = response.error {
+                    completion(.failure(AppError.serverError(error)))
+                    return
+                }
+                if let decodedData = response.data {
+                    completion(.success(decodedData))
+                } else {
+                    completion(.failure(AppError.unknownError))
+                }
+            } catch let error {
+                print(error.localizedDescription)
+            }
+        case .failure(_):
+            completion(.failure(AppError.errorDecoding))
+            return
+        }
     }
     
     /// This function helps to generate a urlRequest
