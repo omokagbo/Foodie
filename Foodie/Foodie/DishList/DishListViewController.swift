@@ -14,11 +14,11 @@ class DishListViewController: UIViewController {
     var category: DishCategory!
     
     var dish: [PopularDish] = [
-        .init(id: "id1", name: "Garri", description: "Cassava flakes with a difference", image: "https://picsum.photos/100/200", calories: 94),
-        .init(id: "id2", name: "Amala", description: "Amala with any soup of choice", image: "https://picsum.photos/100/200", calories: 224),
-        .init(id: "id3", name: "Semo", description: "Finest semo in town", image: "https://picsum.photos/100/200", calories: 246),
-        .init(id: "id4", name: "Fried Rice", description: "Fried rice with salad", image: "https://picsum.photos/100/200", calories: 128),
-        .init(id: "id5", name: "Jollof Rice", description: "Nigerian jollof like you have never tasted", image: "https://picsum.photos/100/200", calories: 140)
+        .init(id: "id1", name: "Garri", description: "Cassava flakes with a difference", image: "https://picsum.photos/200/200", calories: 94),
+        .init(id: "id2", name: "Amala", description: "Amala with any soup of choice", image: "https://picsum.photos/200/200", calories: 224),
+        .init(id: "id3", name: "Semo", description: "Finest semo in town", image: "https://picsum.photos/200/200", calories: 246),
+        .init(id: "id4", name: "Fried Rice", description: "Fried rice with salad", image: "https://picsum.photos/200/200", calories: 128),
+        .init(id: "id5", name: "Jollof Rice", description: "Nigerian jollof like you have never tasted", image: "https://picsum.photos/200/200", calories: 140)
     ]
     
     override func viewDidLoad() {
