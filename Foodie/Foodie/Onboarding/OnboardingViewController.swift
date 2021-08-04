@@ -31,6 +31,7 @@ class OnboardingViewController: UIViewController {
         super.viewDidLoad()
         slides = viewModel.slides
         pageControl.numberOfPages = viewModel.slides.count
+        NetworkService.shared.myFirstRequest()
     }
     
     @IBAction func nextButtonClicked(_ sender: UIButton) {

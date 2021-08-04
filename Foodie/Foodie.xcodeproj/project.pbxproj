@@ -37,6 +37,7 @@
 		B486995026BB310000094114 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B486994F26BB310000094114 /* NetworkService.swift */; };
 		B486995226BB318A00094114 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = B486995126BB318A00094114 /* Route.swift */; };
 		B486995426BB319C00094114 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = B486995326BB319B00094114 /* Method.swift */; };
+		B486995626BB3A3A00094114 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B486995526BB3A3A00094114 /* AppError.swift */; };
 		B49A4EC2266A518B003E9087 /* FoodieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49A4EC1266A518B003E9087 /* FoodieTests.swift */; };
 		B49A4ED3266A5E41003E9087 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49A4ED2266A5E41003E9087 /* HomeViewController.swift */; };
 		B49A4EE5266AA10F003E9087 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B49A4EE4266AA10F003E9087 /* IQKeyboardManagerSwift */; };
@@ -89,6 +90,7 @@
 		B486994F26BB310000094114 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		B486995126BB318A00094114 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		B486995326BB319B00094114 /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
+		B486995526BB3A3A00094114 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		B49A4EBF266A518B003E9087 /* FoodieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B49A4EC1266A518B003E9087 /* FoodieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodieTests.swift; sourceTree = "<group>"; };
 		B49A4EC3266A518B003E9087 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -301,6 +303,7 @@
 				B486994F26BB310000094114 /* NetworkService.swift */,
 				B486995126BB318A00094114 /* Route.swift */,
 				B486995326BB319B00094114 /* Method.swift */,
+				B486995526BB3A3A00094114 /* AppError.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -483,6 +486,7 @@
 				B4239F0426762E7C00E05B48 /* DishListViewController.swift in Sources */,
 				B42772682660421E007FA7E5 /* SceneDelegate.swift in Sources */,
 				B427728A26606B2F007FA7E5 /* OnboardingCollectionViewCell.swift in Sources */,
+				B486995626BB3A3A00094114 /* AppError.swift in Sources */,
 				B42773152661C7AE007FA7E5 /* CardView.swift in Sources */,
 				B433F7012676DE2C003B6372 /* Orders.swift in Sources */,
 				B4239F1026768CF400E05B48 /* OrdersViewController.swift in Sources */,

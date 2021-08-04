@@ -13,13 +13,43 @@ struct NetworkService {
     
     private init() {}
     
+    func myFirstRequest() {
+        request(route: .temp, method: .get, type: String.self) { result in
+            
+        }
+    }
+    
+    private func request<T: Codable>(route: Route,
+                                     method: Method,
+                                     parameters: [String: Any]? = nil,
+                                     type: T.Type,
+                                     completion: @escaping (Result<T, Error>) -> Void) {
+        guard let request = createRequest(route: route, method: method, parameters: parameters) else {
+            completion(.failure(AppError.unknownError))
+            return
+        }
+        URLSession.shared.dataTask(with: request) { data, response, error in
+            var result: Result<Data, Error>?
+            if let data = data {
+                result = .success(data)
+                let responseString = String(data: data, encoding: .utf8)
+                print("\(responseString)")
+            } else if let error = error {
+                result = .failure(error)
+                print(error.localizedDescription)
+            }
+        }.resume()
+    }
+    
     /// This function helps to generate a urlRequest
     /// - Parameters:
     ///   - route: Path to the resource in the backend
     ///   - method: Type of request to be made
     ///   - parameters: Any extra information that needs to be passed to the backend
     /// - Returns: Returns a urlRequest
-     func createRequest(route: Route, method: Method, parameters: [String: Any]? = nil) -> URLRequest? {
+    private func createRequest(route: Route,
+                               method: Method,
+                               parameters: [String: Any]? = nil) -> URLRequest? {
         let urlString = Route.baseUrl + route.description
         guard let url = urlString.asURL else {
             return nil
