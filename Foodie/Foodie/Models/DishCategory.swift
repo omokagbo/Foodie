@@ -7,6 +7,6 @@
 
 import UIKit
 
-struct DishCategory {
-    let id, name, image: String?
+struct DishCategory: Codable {
+    let id, title, image: String?
 }

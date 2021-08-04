@@ -13,7 +13,7 @@ class DishListViewController: UIViewController {
     
     var category: DishCategory!
     
-    var dish: [PopularDish] = [
+    var dish: [Dish] = [
         .init(id: "id1", name: "Garri", description: "Cassava flakes with a difference", image: "https://picsum.photos/200/200", calories: 94),
         .init(id: "id2", name: "Amala", description: "Amala with any soup of choice", image: "https://picsum.photos/200/200", calories: 224),
         .init(id: "id3", name: "Semo", description: "Finest semo in town", image: "https://picsum.photos/200/200", calories: 246),
@@ -23,7 +23,7 @@ class DishListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = category.name
+        title = category.title
         registerCell()
     }
     

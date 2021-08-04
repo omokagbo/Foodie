@@ -17,7 +17,7 @@ class HomeDetailsViewController: UIViewController {
     @IBOutlet weak var orderButton: UIButton!
     
 
-    var dish: PopularDish!
+    var dish: Dish!
     
 
     

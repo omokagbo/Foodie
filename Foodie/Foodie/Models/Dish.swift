@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct PopularDish: Codable {
+struct Dish: Codable {
     let id, name, description, image: String?
     let calories: Int?
     

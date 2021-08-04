@@ -31,17 +31,6 @@ class OnboardingViewController: UIViewController {
         super.viewDidLoad()
         slides = viewModel.slides
         pageControl.numberOfPages = viewModel.slides.count
-        NetworkService.shared.myFirstRequest { [weak self] result in
-            switch result {
-            case .success(let data):
-                print(data)
-                for dish in data {
-                    print(dish.name ?? "")
-                }
-            case .failure(let error):
-                print(error.localizedDescription)
-            }
-        }
     }
     
     @IBAction func nextButtonClicked(_ sender: UIButton) {

@@ -13,8 +13,8 @@ struct NetworkService {
     
     private init() {}
     
-    func myFirstRequest(completion: @escaping (Result<[PopularDish], Error>) -> Void) {
-        request(route: .temp, method: .get, completion: completion)
+    func fetchAllCategories(completion: @escaping (Result<AllDishes, Error>) -> Void) {
+        request(route: .fetchAllCategories, method: .get, completion: completion)
     }
     
     private func request<T: Codable>(route: Route,
