@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomeDetailsViewController: UIViewController {
+final class HomeDetailsViewController: UIViewController {
     
     @IBOutlet weak var dishImageView: UIImageView!
     @IBOutlet weak var dishNameLbl: UILabel!
@@ -16,36 +16,35 @@ class HomeDetailsViewController: UIViewController {
     @IBOutlet weak var nameField: UITextField!
     @IBOutlet weak var orderButton: UIButton!
     
-    var dish: Dish?
+    let viewModel = HomeDetailsViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        populateView()
-        
+        updateViews()
     }
     
-    private func populateView() {
-        dishImageView.kf.setImage(with: dish?.image?.asURL)
-        dishNameLbl.text = dish?.name
-        caloriesLbl.text = dish?.formattedCalories
-        dishDescription.text = dish?.description
+    private func updateViews() {
+        dishImageView.kf.setImage(with: viewModel.dish?.image?.asURL)
+        dishNameLbl.text = viewModel.dish?.name
+        caloriesLbl.text = viewModel.dish?.formattedCalories
+        dishDescription.text = viewModel.dish?.description
     }
     
     @IBAction func placeOrderBtnTapped(_ sender: UIButton) {
-        guard let name = nameField.text?.trimmingCharacters(in: .whitespaces),
-              !name.isEmpty,
-              name != "" else {
-            self.showHUDError(status: "Please Enter Your Name")
-            return
+        setupViewModelListeners()
+        viewModel.placeOrder(name: nameField.text)
+    }
+    
+    private func setupViewModelListeners() {
+        viewModel.notifyCompletion = { [weak self] message in
+            DispatchQueue.main.async {
+                self?.showHUDSuccess(status: message)
+            }
         }
-        self.presentHUD(status: "Placing order")
-        NetworkService.shared.placeOrder(dishId: dish?.id ?? "", name: name) { [weak self] result in
-            switch result {
-            case .success(let order):
-                self?.showHUDSuccess(status: "Order received, \(order.name ?? "")")
-            case .failure(let error):
-                print(error.localizedDescription)
-                self?.showHUDError(status: error.localizedDescription)
+        
+        viewModel.notifyError = { [weak self] error in
+            DispatchQueue.main.async {
+                self?.showHUDError(status: error)
             }
         }
     }

@@ -64,7 +64,7 @@ extension OrdersViewController: UITableViewDataSource {
 extension OrdersViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let controller = HomeDetailsViewController.instantiate(storyboardName: "HomeDetails")
-        controller.dish = orders[indexPath.row].dish
+        controller.viewModel.dish = orders[indexPath.row].dish
         navigationController?.pushViewController(controller, animated: true)
     }
 }

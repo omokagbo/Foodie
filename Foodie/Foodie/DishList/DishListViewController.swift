@@ -64,7 +64,7 @@ extension DishListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         let controller = HomeDetailsViewController.instantiate(storyboardName: "HomeDetails")
-        controller.dish = dish[indexPath.row]
+        controller.viewModel.dish = dish[indexPath.row]
         navigationController?.pushViewController(controller, animated: true)
     }
 }

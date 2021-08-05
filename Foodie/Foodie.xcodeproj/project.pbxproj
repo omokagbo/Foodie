@@ -51,6 +51,7 @@
 		B49A4F30266D1ECE003E9087 /* ChefSpecialsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49A4F2E266D1ECE003E9087 /* ChefSpecialsCollectionViewCell.swift */; };
 		B49A4F31266D1ECE003E9087 /* ChefSpecialsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B49A4F2F266D1ECE003E9087 /* ChefSpecialsCollectionViewCell.xib */; };
 		B4E1AA9E26BBC514007FE043 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E1AA9D26BBC514007FE043 /* HomeViewModel.swift */; };
+		B4E1AAA026BBD187007FE043 /* HomeDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E1AA9F26BBD187007FE043 /* HomeDetailsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +110,7 @@
 		B49A4F2E266D1ECE003E9087 /* ChefSpecialsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChefSpecialsCollectionViewCell.swift; sourceTree = "<group>"; };
 		B49A4F2F266D1ECE003E9087 /* ChefSpecialsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChefSpecialsCollectionViewCell.xib; sourceTree = "<group>"; };
 		B4E1AA9D26BBC514007FE043 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		B4E1AA9F26BBD187007FE043 /* HomeDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -279,6 +281,7 @@
 			children = (
 				B427728726606828007FA7E5 /* OnboardingViewModel.swift */,
 				B4E1AA9D26BBC514007FE043 /* HomeViewModel.swift */,
+				B4E1AA9F26BBD187007FE043 /* HomeDetailsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -485,6 +488,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4E1AAA026BBD187007FE043 /* HomeDetailsViewModel.swift in Sources */,
 				B486995026BB310000094114 /* NetworkService.swift in Sources */,
 				B49A4F29266CFBE3003E9087 /* PopularDishesCollectionViewCell.swift in Sources */,
 				B4277285266067A3007FA7E5 /* OnboardingSlideModel.swift in Sources */,
