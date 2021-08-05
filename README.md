@@ -20,6 +20,7 @@ $ cd Foodie
 ```
 
 Open the file `Foodie.xcodeproj` using Xcode 
+
 Click on the play button at the top left corner to build and run the project
 
 ## LAUNCH SCREEN:
