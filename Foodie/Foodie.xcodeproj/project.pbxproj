@@ -50,6 +50,7 @@
 		B49A4F2C266CFEA1003E9087 /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49A4F2B266CFEA1003E9087 /* Dish.swift */; };
 		B49A4F30266D1ECE003E9087 /* ChefSpecialsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49A4F2E266D1ECE003E9087 /* ChefSpecialsCollectionViewCell.swift */; };
 		B49A4F31266D1ECE003E9087 /* ChefSpecialsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B49A4F2F266D1ECE003E9087 /* ChefSpecialsCollectionViewCell.xib */; };
+		B4E1AA9E26BBC514007FE043 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E1AA9D26BBC514007FE043 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +108,7 @@
 		B49A4F2B266CFEA1003E9087 /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
 		B49A4F2E266D1ECE003E9087 /* ChefSpecialsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChefSpecialsCollectionViewCell.swift; sourceTree = "<group>"; };
 		B49A4F2F266D1ECE003E9087 /* ChefSpecialsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChefSpecialsCollectionViewCell.xib; sourceTree = "<group>"; };
+		B4E1AA9D26BBC514007FE043 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -276,6 +278,7 @@
 			isa = PBXGroup;
 			children = (
 				B427728726606828007FA7E5 /* OnboardingViewModel.swift */,
+				B4E1AA9D26BBC514007FE043 /* HomeViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -497,6 +500,7 @@
 				B427730A2661A1B6007FA7E5 /* CategoryCollectionViewCell.swift in Sources */,
 				B4239EF22676115E00E05B48 /* HomeDetailsViewController.swift in Sources */,
 				B42772662660421E007FA7E5 /* AppDelegate.swift in Sources */,
+				B4E1AA9E26BBC514007FE043 /* HomeViewModel.swift in Sources */,
 				B4239F0426762E7C00E05B48 /* DishListViewController.swift in Sources */,
 				B486995D26BB4BB300094114 /* AllDishes.swift in Sources */,
 				B42772682660421E007FA7E5 /* SceneDelegate.swift in Sources */,
