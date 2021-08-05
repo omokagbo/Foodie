@@ -7,7 +7,7 @@
 
 import Foundation
 
-class OnboardingViewModel {
+final class OnboardingViewModel {
     
     var slides: [OnboardingSlideModel] = []
     
