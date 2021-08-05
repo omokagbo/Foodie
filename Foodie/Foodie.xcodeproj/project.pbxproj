@@ -34,12 +34,20 @@
 		B42773122661ABBB007FA7E5 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42773112661ABBB007FA7E5 /* String+Extension.swift */; };
 		B42773152661C7AE007FA7E5 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42773142661C7AE007FA7E5 /* CardView.swift */; };
 		B433F7012676DE2C003B6372 /* Orders.swift in Sources */ = {isa = PBXBuildFile; fileRef = B433F7002676DE2C003B6372 /* Orders.swift */; };
+		B486995026BB310000094114 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B486994F26BB310000094114 /* NetworkService.swift */; };
+		B486995226BB318A00094114 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = B486995126BB318A00094114 /* Route.swift */; };
+		B486995426BB319C00094114 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = B486995326BB319B00094114 /* Method.swift */; };
+		B486995626BB3A3A00094114 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B486995526BB3A3A00094114 /* AppError.swift */; };
+		B486995826BB3F5D00094114 /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B486995726BB3F5D00094114 /* ApiResponse.swift */; };
+		B486995B26BB4B2100094114 /* ProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = B486995A26BB4B2100094114 /* ProgressHUD */; };
+		B486995D26BB4BB300094114 /* AllDishes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B486995C26BB4BB300094114 /* AllDishes.swift */; };
+		B486995F26BB4D6000094114 /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = B486995E26BB4D6000094114 /* HUD.swift */; };
 		B49A4EC2266A518B003E9087 /* FoodieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49A4EC1266A518B003E9087 /* FoodieTests.swift */; };
 		B49A4ED3266A5E41003E9087 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49A4ED2266A5E41003E9087 /* HomeViewController.swift */; };
 		B49A4EE5266AA10F003E9087 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B49A4EE4266AA10F003E9087 /* IQKeyboardManagerSwift */; };
 		B49A4F29266CFBE3003E9087 /* PopularDishesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49A4F27266CFBE3003E9087 /* PopularDishesCollectionViewCell.swift */; };
 		B49A4F2A266CFBE3003E9087 /* PopularDishesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B49A4F28266CFBE3003E9087 /* PopularDishesCollectionViewCell.xib */; };
-		B49A4F2C266CFEA1003E9087 /* PopularDish.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49A4F2B266CFEA1003E9087 /* PopularDish.swift */; };
+		B49A4F2C266CFEA1003E9087 /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49A4F2B266CFEA1003E9087 /* Dish.swift */; };
 		B49A4F30266D1ECE003E9087 /* ChefSpecialsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49A4F2E266D1ECE003E9087 /* ChefSpecialsCollectionViewCell.swift */; };
 		B49A4F31266D1ECE003E9087 /* ChefSpecialsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B49A4F2F266D1ECE003E9087 /* ChefSpecialsCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
@@ -83,13 +91,20 @@
 		B42773112661ABBB007FA7E5 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		B42773142661C7AE007FA7E5 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		B433F7002676DE2C003B6372 /* Orders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Orders.swift; sourceTree = "<group>"; };
+		B486994F26BB310000094114 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		B486995126BB318A00094114 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		B486995326BB319B00094114 /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
+		B486995526BB3A3A00094114 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		B486995726BB3F5D00094114 /* ApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
+		B486995C26BB4BB300094114 /* AllDishes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllDishes.swift; sourceTree = "<group>"; };
+		B486995E26BB4D6000094114 /* HUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUD.swift; sourceTree = "<group>"; };
 		B49A4EBF266A518B003E9087 /* FoodieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B49A4EC1266A518B003E9087 /* FoodieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodieTests.swift; sourceTree = "<group>"; };
 		B49A4EC3266A518B003E9087 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B49A4ED2266A5E41003E9087 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B49A4F27266CFBE3003E9087 /* PopularDishesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularDishesCollectionViewCell.swift; sourceTree = "<group>"; };
 		B49A4F28266CFBE3003E9087 /* PopularDishesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopularDishesCollectionViewCell.xib; sourceTree = "<group>"; };
-		B49A4F2B266CFEA1003E9087 /* PopularDish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularDish.swift; sourceTree = "<group>"; };
+		B49A4F2B266CFEA1003E9087 /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
 		B49A4F2E266D1ECE003E9087 /* ChefSpecialsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChefSpecialsCollectionViewCell.swift; sourceTree = "<group>"; };
 		B49A4F2F266D1ECE003E9087 /* ChefSpecialsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChefSpecialsCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B486995B26BB4B2100094114 /* ProgressHUD in Frameworks */,
 				B42773102661A873007FA7E5 /* Kingfisher in Frameworks */,
 				B49A4EE5266AA10F003E9087 /* IQKeyboardManagerSwift in Frameworks */,
 			);
@@ -189,7 +205,8 @@
 				B4277286266067FC007FA7E5 /* ViewModels */,
 				B427727B26605F1E007FA7E5 /* CustomViews */,
 				B49A4EBA266A3059003E9087 /* Storyboards */,
-				B42772812660658C007FA7E5 /* Extensions */,
+				B486994E26BB2FDF00094114 /* Networking */,
+				B42772812660658C007FA7E5 /* Helpers */,
 				B42772802660614E007FA7E5 /* Resources */,
 			);
 			path = Foodie;
@@ -200,8 +217,9 @@
 			children = (
 				B4277284266067A3007FA7E5 /* OnboardingSlideModel.swift */,
 				B427730C2661A582007FA7E5 /* DishCategory.swift */,
-				B49A4F2B266CFEA1003E9087 /* PopularDish.swift */,
+				B49A4F2B266CFEA1003E9087 /* Dish.swift */,
 				B433F7002676DE2C003B6372 /* Orders.swift */,
+				B486995C26BB4BB300094114 /* AllDishes.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -243,14 +261,15 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		B42772812660658C007FA7E5 /* Extensions */ = {
+		B42772812660658C007FA7E5 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
 				B4277282266065CA007FA7E5 /* UIView + Extension.swift */,
 				B42773112661ABBB007FA7E5 /* String+Extension.swift */,
 				B4239EF32676176F00E05B48 /* UIViewController + Extension.swift */,
+				B486995E26BB4D6000094114 /* HUD.swift */,
 			);
-			path = Extensions;
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		B4277286266067FC007FA7E5 /* ViewModels */ = {
@@ -286,6 +305,18 @@
 				B42773142661C7AE007FA7E5 /* CardView.swift */,
 			);
 			path = CardView;
+			sourceTree = "<group>";
+		};
+		B486994E26BB2FDF00094114 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				B486994F26BB310000094114 /* NetworkService.swift */,
+				B486995126BB318A00094114 /* Route.swift */,
+				B486995326BB319B00094114 /* Method.swift */,
+				B486995526BB3A3A00094114 /* AppError.swift */,
+				B486995726BB3F5D00094114 /* ApiResponse.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		B49A4EBA266A3059003E9087 /* Storyboards */ = {
@@ -352,6 +383,7 @@
 			packageProductDependencies = (
 				B427730F2661A873007FA7E5 /* Kingfisher */,
 				B49A4EE4266AA10F003E9087 /* IQKeyboardManagerSwift */,
+				B486995A26BB4B2100094114 /* ProgressHUD */,
 			);
 			productName = Foodie;
 			productReference = B42772622660421E007FA7E5 /* Foodie.app */;
@@ -405,6 +437,7 @@
 			packageReferences = (
 				B427730E2661A873007FA7E5 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				B49A4EE3266AA10F003E9087 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				B486995926BB4B2100094114 /* XCRemoteSwiftPackageReference "ProgressHUD" */,
 			);
 			productRefGroup = B42772632660421E007FA7E5 /* Products */;
 			projectDirPath = "";
@@ -449,25 +482,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B486995026BB310000094114 /* NetworkService.swift in Sources */,
 				B49A4F29266CFBE3003E9087 /* PopularDishesCollectionViewCell.swift in Sources */,
 				B4277285266067A3007FA7E5 /* OnboardingSlideModel.swift in Sources */,
 				B42773122661ABBB007FA7E5 /* String+Extension.swift in Sources */,
-				B49A4F2C266CFEA1003E9087 /* PopularDish.swift in Sources */,
+				B49A4F2C266CFEA1003E9087 /* Dish.swift in Sources */,
+				B486995826BB3F5D00094114 /* ApiResponse.swift in Sources */,
 				B427730D2661A582007FA7E5 /* DishCategory.swift in Sources */,
 				B4239F002676279200E05B48 /* DishListTableViewCell.swift in Sources */,
 				B427728826606828007FA7E5 /* OnboardingViewModel.swift in Sources */,
+				B486995426BB319C00094114 /* Method.swift in Sources */,
 				B4277283266065CA007FA7E5 /* UIView + Extension.swift in Sources */,
+				B486995226BB318A00094114 /* Route.swift in Sources */,
 				B427730A2661A1B6007FA7E5 /* CategoryCollectionViewCell.swift in Sources */,
 				B4239EF22676115E00E05B48 /* HomeDetailsViewController.swift in Sources */,
 				B42772662660421E007FA7E5 /* AppDelegate.swift in Sources */,
 				B4239F0426762E7C00E05B48 /* DishListViewController.swift in Sources */,
+				B486995D26BB4BB300094114 /* AllDishes.swift in Sources */,
 				B42772682660421E007FA7E5 /* SceneDelegate.swift in Sources */,
 				B427728A26606B2F007FA7E5 /* OnboardingCollectionViewCell.swift in Sources */,
+				B486995626BB3A3A00094114 /* AppError.swift in Sources */,
 				B42773152661C7AE007FA7E5 /* CardView.swift in Sources */,
 				B433F7012676DE2C003B6372 /* Orders.swift in Sources */,
 				B4239F1026768CF400E05B48 /* OrdersViewController.swift in Sources */,
 				B427727E266060CF007FA7E5 /* OnboardingViewController.swift in Sources */,
 				B4239EF42676176F00E05B48 /* UIViewController + Extension.swift in Sources */,
+				B486995F26BB4D6000094114 /* HUD.swift in Sources */,
 				B49A4F30266D1ECE003E9087 /* ChefSpecialsCollectionViewCell.swift in Sources */,
 				B49A4ED3266A5E41003E9087 /* HomeViewController.swift in Sources */,
 			);
@@ -746,6 +786,14 @@
 				minimumVersion = 6.3.0;
 			};
 		};
+		B486995926BB4B2100094114 /* XCRemoteSwiftPackageReference "ProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:relatedcode/ProgressHUD.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		B49A4EE3266AA10F003E9087 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
@@ -761,6 +809,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B427730E2661A873007FA7E5 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		B486995A26BB4B2100094114 /* ProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B486995926BB4B2100094114 /* XCRemoteSwiftPackageReference "ProgressHUD" */;
+			productName = ProgressHUD;
 		};
 		B49A4EE4266AA10F003E9087 /* IQKeyboardManagerSwift */ = {
 			isa = XCSwiftPackageProductDependency;

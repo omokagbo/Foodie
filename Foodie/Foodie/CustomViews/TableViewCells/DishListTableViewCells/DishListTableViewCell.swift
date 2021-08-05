@@ -15,7 +15,7 @@ class DishListTableViewCell: UITableViewCell {
     @IBOutlet weak var dishNameLbl: UILabel!
     @IBOutlet weak var dishDescriptionLbl: UILabel!
     
-    func setup(with dish: PopularDish) {
+    func setup(with dish: Dish) {
         dishImageView.kf.setImage(with: dish.image?.asURL)
         dishNameLbl.text = dish.name
         dishDescriptionLbl.text = dish.description
