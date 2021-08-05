@@ -7,47 +7,46 @@
 
 import UIKit
 
-class OnboardingViewController: UIViewController {
+final class OnboardingViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var skipButton: UIButton!
+    
     private var viewModel = OnboardingViewModel()
     var slides: [OnboardingSlideModel] = []
-    
-    private var currentPage = 0 {
-        didSet {
-            pageControl.currentPage = currentPage
-            if currentPage == viewModel.slides.count - 1 {
-                nextButton.setTitle("Get Started", for: .normal)
-            } else {
-                nextButton.setTitle("Next", for: .normal)
-            }
-        }
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         slides = viewModel.slides
         pageControl.numberOfPages = viewModel.slides.count
+        updateViews()
+    }
+    
+    private func updateViews() {
+        viewModel.updateButton = { [weak self] nextBtnTitle, currentPage, skipBtnTitle in
+            self?.pageControl.currentPage = currentPage
+            self?.nextButton.setTitle(nextBtnTitle, for: .normal)
+            self?.skipButton.setTitle(skipBtnTitle, for: .normal)
+        }
     }
     
     @IBAction func nextButtonClicked(_ sender: UIButton) {
-        if currentPage == viewModel.slides.count - 1 {
-            self.skipButton.isHidden = true
-            guard let homeNC = storyboard?.instantiateViewController(withIdentifier: "HomeNC") as? UINavigationController else { return }
-            homeNC.modalPresentationStyle = .fullScreen
-            homeNC.modalTransitionStyle = .flipHorizontal
-            present(homeNC, animated: true, completion: nil)
+        if viewModel.currentPage == viewModel.slides.count - 1 {
+            skipToHome()
         } else {
-            currentPage += 1
-            let indexPath = IndexPath(item: currentPage, section: 0)
+            viewModel.currentPage += 1
+            let indexPath = IndexPath(item: viewModel.currentPage, section: 0)
             collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
         }
     }
     
     @IBAction func skipButtonTapped(_ sender: UIButton) {
+        skipToHome()
+    }
+    
+    private func skipToHome() {
         guard let homeNC = storyboard?.instantiateViewController(withIdentifier: "HomeNC") as? UINavigationController else { return }
         homeNC.modalPresentationStyle = .fullScreen
         homeNC.modalTransitionStyle = .flipHorizontal
@@ -78,6 +77,6 @@ extension OnboardingViewController: UICollectionViewDelegateFlowLayout {
     
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         let width = scrollView.frame.width
-        currentPage = Int(scrollView.contentOffset.x / width)
+        viewModel.currentPage = Int(scrollView.contentOffset.x / width)
     }
 }

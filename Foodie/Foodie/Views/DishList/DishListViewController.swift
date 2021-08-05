@@ -11,29 +11,28 @@ class DishListViewController: UIViewController {
     
     @IBOutlet weak var dishListTableView: UITableView!
     
-    var category: DishCategory?
-    
-    var dish: [Dish] = []
+    let viewModel = DishListViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = category?.title
+        title = viewModel.category?.title
         registerCell()
-        getDishCategories()
+        setupViewModelListeners()
     }
     
-    private func getDishCategories() {
+    private func setupViewModelListeners() {
+        viewModel.getDishCategories()
         self.presentHUD(status: nil)
-        NetworkService.shared.fetchDishCategories(categoryId: category?.id ?? "") { [weak self] result in
-            switch result {
-            case .success(let dishes):
+        viewModel.notifyCompletion = { [weak self] in
+            DispatchQueue.main.async {
+                self?.dishListTableView.reloadData()
                 self?.dismissHUD()
-                self?.dish = dishes
-                DispatchQueue.main.async {
-                    self?.dishListTableView.reloadData()
-                }
-            case .failure(let error):
-                self?.showHUDError(status: error.localizedDescription)
+            }
+        }
+        
+        viewModel.notifyError = { [weak self] message in
+            DispatchQueue.main.async {
+                self?.showHUDError(status: message)
             }
         }
     }
@@ -50,12 +49,12 @@ extension DishListViewController: UITableViewDataSource {
         guard let cell = dishListTableView.dequeueReusableCell(withIdentifier: DishListTableViewCell.identifier, for: indexPath) as? DishListTableViewCell else {
             return UITableViewCell()
         }
-        cell.setup(with: dish[indexPath.row])
+        cell.setup(with: viewModel.dish[indexPath.row])
         return cell
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dish.count
+        return viewModel.dish.count
     }
     
 }
@@ -64,7 +63,7 @@ extension DishListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         let controller = HomeDetailsViewController.instantiate(storyboardName: "HomeDetails")
-        controller.dish = dish[indexPath.row]
+        controller.viewModel.dish = viewModel.dish[indexPath.row]
         navigationController?.pushViewController(controller, animated: true)
     }
 }

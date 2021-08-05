@@ -7,41 +7,36 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+final class HomeViewController: UIViewController {
     
     @IBOutlet weak var foodCategoryCollectionView: UICollectionView!
     @IBOutlet weak var popularDishesCollectionView: UICollectionView!
     @IBOutlet weak var chefSpecialsCollectionView: UICollectionView!
     
-    var categories: [DishCategory] = []
-    var popularDishes: [Dish] = []
-    var specialDishes: [Dish] = []
+    private let viewModel = HomeViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         registerNibs()
-        fetchAllCategories()
+        viewModel.fetchAllCategories()
+        setupViewModelListeners()
     }
     
-    private func fetchAllCategories() {
+    private func setupViewModelListeners() {
         self.presentHUD(status: "Fetching Dishes")
-        NetworkService.shared.fetchAllCategories { [weak self] result in
-            switch result {
-            case .success(let allDishes):
-                self?.categories = allDishes.categories ?? []
-                self?.popularDishes = allDishes.populars ?? []
-                self?.specialDishes = allDishes.specials ?? []
-                self?.dismissHUD()
-                DispatchQueue.main.async {
-                    self?.foodCategoryCollectionView.reloadData()
-                    self?.popularDishesCollectionView.reloadData()
-                    self?.chefSpecialsCollectionView.reloadData()
-                }
-            case .failure(let error):
-                self?.dismissHUD()
-                print(error.localizedDescription)
+        viewModel.notifyCompletion = {
+            self.dismissHUD()
+            DispatchQueue.main.async { [weak self] in
+                self?.foodCategoryCollectionView.reloadData()
+                self?.popularDishesCollectionView.reloadData()
+                self?.chefSpecialsCollectionView.reloadData()
             }
         }
+        
+        viewModel.notifyError = { [weak self] error in
+            self?.showHUDError(status: error)
+        }
+        
     }
     
     private func registerNibs() {
@@ -57,11 +52,11 @@ extension HomeViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         switch collectionView {
         case foodCategoryCollectionView:
-            return categories.count
+            return viewModel.categories.count
         case popularDishesCollectionView:
-            return popularDishes.count
+            return viewModel.popularDishes.count
         case chefSpecialsCollectionView:
-            return specialDishes.count
+            return viewModel.specialDishes.count
         default:
             return 0
         }
@@ -72,15 +67,15 @@ extension HomeViewController: UICollectionViewDataSource {
         switch collectionView {
         case foodCategoryCollectionView:
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CategoryCollectionViewCell.identifier, for: indexPath) as? CategoryCollectionViewCell else { return UICollectionViewCell() }
-            cell.setup(categories[indexPath.row])
+            cell.setup(viewModel.categories[indexPath.row])
             return cell
         case popularDishesCollectionView:
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PopularDishesCollectionViewCell.identifier, for: indexPath) as? PopularDishesCollectionViewCell else { return UICollectionViewCell() }
-            cell.setup(popularDishes[indexPath.row])
+            cell.setup(viewModel.popularDishes[indexPath.row])
             return cell
         case chefSpecialsCollectionView:
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ChefSpecialsCollectionViewCell.identifier, for: indexPath) as? ChefSpecialsCollectionViewCell else { return UICollectionViewCell() }
-            cell.setup(specialDishes[indexPath.row])
+            cell.setup(viewModel.specialDishes[indexPath.row])
             return cell
         default:
             return UICollectionViewCell()
@@ -95,13 +90,13 @@ extension HomeViewController: UICollectionViewDelegate {
         if collectionView == foodCategoryCollectionView {
             let controller = DishListViewController.instantiate(storyboardName: "DishList")
             navigationController?.modalPresentationStyle = .fullScreen
-            controller.category = categories[indexPath.row]
+            controller.viewModel.category = viewModel.categories[indexPath.row]
             navigationController?.pushViewController(controller, animated: true)
         } else {
             let controller = HomeDetailsViewController.instantiate(storyboardName: "HomeDetails")
-            controller.dish = collectionView == popularDishesCollectionView ? popularDishes[indexPath.row] : specialDishes[indexPath.row]
+            controller.viewModel.dish = collectionView == popularDishesCollectionView ? viewModel.popularDishes[indexPath.row] : viewModel.specialDishes[indexPath.row]
             navigationController?.modalPresentationStyle = .fullScreen
-            controller.dish = collectionView == popularDishesCollectionView ? popularDishes[indexPath.row] : specialDishes[indexPath.row]
+            controller.viewModel.dish = collectionView == popularDishesCollectionView ? viewModel.popularDishes[indexPath.row] : viewModel.specialDishes[indexPath.row]
 
             navigationController?.pushViewController(controller, animated: true)
         }
