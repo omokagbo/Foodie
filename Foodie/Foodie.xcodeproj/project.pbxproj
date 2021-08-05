@@ -53,6 +53,7 @@
 		B4E1AA9E26BBC514007FE043 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E1AA9D26BBC514007FE043 /* HomeViewModel.swift */; };
 		B4E1AAA026BBD187007FE043 /* HomeDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E1AA9F26BBD187007FE043 /* HomeDetailsViewModel.swift */; };
 		B4E1AAA226BBE7A7007FE043 /* DishListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E1AAA126BBE7A7007FE043 /* DishListViewModel.swift */; };
+		B4E1AAA426BBEB45007FE043 /* OrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E1AAA326BBEB45007FE043 /* OrderViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +114,7 @@
 		B4E1AA9D26BBC514007FE043 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		B4E1AA9F26BBD187007FE043 /* HomeDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailsViewModel.swift; sourceTree = "<group>"; };
 		B4E1AAA126BBE7A7007FE043 /* DishListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishListViewModel.swift; sourceTree = "<group>"; };
+		B4E1AAA326BBEB45007FE043 /* OrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,15 +204,9 @@
 			isa = PBXGroup;
 			children = (
 				B427727F26606127007FA7E5 /* App + Scene Delegates */,
-				B427727C2660609E007FA7E5 /* Onboarding */,
-				B49A4ED1266A5E33003E9087 /* Home */,
-				B4239EEE267572CB00E05B48 /* Home Details */,
-				B4239F0226762E4000E05B48 /* DishList */,
-				B4239F0C26768CD200E05B48 /* Orders */,
 				B427727926605ECE007FA7E5 /* Models */,
+				B4E1AAA526BBEE39007FE043 /* Views */,
 				B4277286266067FC007FA7E5 /* ViewModels */,
-				B427727B26605F1E007FA7E5 /* CustomViews */,
-				B49A4EBA266A3059003E9087 /* Storyboards */,
 				B486994E26BB2FDF00094114 /* Networking */,
 				B42772812660658C007FA7E5 /* Helpers */,
 				B42772802660614E007FA7E5 /* Resources */,
@@ -285,6 +281,7 @@
 				B4E1AA9D26BBC514007FE043 /* HomeViewModel.swift */,
 				B4E1AA9F26BBD187007FE043 /* HomeDetailsViewModel.swift */,
 				B4E1AAA126BBE7A7007FE043 /* DishListViewModel.swift */,
+				B4E1AAA326BBEB45007FE043 /* OrderViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -371,6 +368,20 @@
 				B49A4F2F266D1ECE003E9087 /* ChefSpecialsCollectionViewCell.xib */,
 			);
 			path = ChefSpecials;
+			sourceTree = "<group>";
+		};
+		B4E1AAA526BBEE39007FE043 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B427727C2660609E007FA7E5 /* Onboarding */,
+				B49A4ED1266A5E33003E9087 /* Home */,
+				B4239EEE267572CB00E05B48 /* Home Details */,
+				B4239F0226762E4000E05B48 /* DishList */,
+				B4239F0C26768CD200E05B48 /* Orders */,
+				B427727B26605F1E007FA7E5 /* CustomViews */,
+				B49A4EBA266A3059003E9087 /* Storyboards */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -514,6 +525,7 @@
 				B42772682660421E007FA7E5 /* SceneDelegate.swift in Sources */,
 				B427728A26606B2F007FA7E5 /* OnboardingCollectionViewCell.swift in Sources */,
 				B486995626BB3A3A00094114 /* AppError.swift in Sources */,
+				B4E1AAA426BBEB45007FE043 /* OrderViewModel.swift in Sources */,
 				B42773152661C7AE007FA7E5 /* CardView.swift in Sources */,
 				B433F7012676DE2C003B6372 /* Orders.swift in Sources */,
 				B4239F1026768CF400E05B48 /* OrdersViewController.swift in Sources */,
