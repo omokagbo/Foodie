@@ -13,10 +13,25 @@ struct NetworkService {
     
     private init() {}
     
+    /// Function to fetch all dishes from the backend
+    /// - Parameter completion: completion to show when the fetch has been completed
     func fetchAllCategories(completion: @escaping (Result<AllDishes, Error>) -> Void) {
         request(route: .fetchAllCategories, method: .get, completion: completion)
     }
     
+    /// Function to make orders
+    /// - Parameter completion: completion to show when the order has been made
+    func placeOrder(dishId: String, name: String, completion: @escaping (Result<Order, Error>) -> Void) {
+        let params = [ "name": name ]
+        request(route: .placeOrder(dishId), method: .post, parameters: params, completion: completion)
+    }
+    
+    /// Function that makes the actual request to the backend
+    /// - Parameters:
+    ///   - route: Path to the resource in the backend
+    ///   - method: Type of request to be made
+    ///   - parameters: Any extra information that needs to be passed to the backend
+    ///   - completion: Completion when the request has been made
     private func request<T: Codable>(route: Route,
                                      method: Method,
                                      parameters: [String: Any]? = nil,
@@ -42,6 +57,10 @@ struct NetworkService {
         }.resume()
     }
     
+    /// Function that handles the response from the JSONDecoder
+    /// - Parameters:
+    ///   - result: result gotten from the URL Request
+    ///   - completion: completion when the URL Request has been made
     private func handleResponse<T: Codable>(result: Result<Data, Error>?, completion: @escaping (Result<T, Error>) -> Void) {
         guard let result = result else {
             completion(.failure(AppError.unknownError))

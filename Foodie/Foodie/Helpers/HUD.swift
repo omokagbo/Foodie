@@ -17,9 +17,21 @@ extension UIViewController {
         }
     }
     
+    func showHUDSuccess(status: String) {
+        DispatchQueue.main.async {
+            ProgressHUD.showSuccess(status)
+        }
+    }
+    
     func dismissHUD(){
         DispatchQueue.main.async {
             ProgressHUD.dismiss()
+        }
+    }
+    
+    func showHUDError(status: String) {
+        DispatchQueue.main.async {
+            ProgressHUD.showError(status)
         }
     }
     

@@ -12,14 +12,12 @@
         <scene sceneID="s0d-6b-0kx">
             <objects>
                 <viewController storyboardIdentifier="HomeDetailsViewController" id="Y6W-OH-hqX" customClass="HomeDetailsViewController" customModule="Foodie" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc" customClass="IQPreviousNextView">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oUK-dx-kwa">
-
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="580"/>
-
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="oUK-dx-kwa">
+                                <rect key="frame" x="0.0" y="44" width="414" height="536"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Hfp-Bi-H1R">
                                 <rect key="frame" x="16" y="596" width="382" height="250"/>
@@ -45,7 +43,7 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eEl-SI-yqc">
-                                        <rect key="frame" x="0.0" y="40" width="382" height="62"/>
+                                        <rect key="frame" x="0.0" y="40" width="382" height="76"/>
                                         <attributedString key="attributedText">
                                             <fragment content=" lorem ipsum diet manu cat parten din s oieroo refi sodf po fdi theis oe bo dna gohr rehoth ohtoi theo ohdfsd fotr hte in teh ">
                                                 <attributes>
@@ -58,7 +56,10 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uzv-ma-lQG">
-                                        <rect key="frame" x="0.0" y="118" width="382" height="66"/>
+                                        <rect key="frame" x="0.0" y="132" width="382" height="52"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="52" id="oqr-kU-pgL"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -82,9 +83,7 @@
                                     </button>
                                 </subviews>
                                 <constraints>
-
                                     <constraint firstAttribute="height" constant="250" id="H0q-PI-WkH"/>
-
                                 </constraints>
                             </stackView>
                         </subviews>
