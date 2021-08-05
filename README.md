@@ -48,7 +48,7 @@ On selecting any of the foods in this category, the user is taken to details abo
 
 <img width="264" alt="Screenshot 2021-08-05 at 02 18 05" src="https://user-images.githubusercontent.com/69020285/128276801-b40ea0fd-8704-4fad-9533-ba70d9849957.png"> <img width="256" alt="Screenshot 2021-08-05 at 02 18 16" src="https://user-images.githubusercontent.com/69020285/128276817-358a4426-8ce7-45bb-b643-a919db5a0e48.png">
 
-<img width="257" alt="Screenshot 2021-08-05 at 02 18 50" src="https://user-images.githubusercontent.com/69020285/128276828-77c074e9-d9cc-453e-ace4-503b418359d9.png"> <img width="259" alt="Screenshot 2021-08-05 at 02 19 10" src="https://user-images.githubusercontent.com/69020285/128276838-4b10a461-9b81-485a-9db3-04056a064910.png">
+<img width="257" alt="Screenshot 2021-08-05 at 02 18 50" src="https://user-images.githubusercontent.com/69020285/128276828-77c074e9-d9cc-453e-ace4-503b418359d9.png"> <img width="253" alt="Screenshot 2021-08-05 at 02 35 45" src="https://user-images.githubusercontent.com/69020285/128277304-ac47796b-9930-4dff-99aa-8a88e11a5131.png">
 
 ## ORDER HISTORY
 On the home screen, there is a cart icon at the top right corner, this enables the user to see a list of all the orders that have been made.
