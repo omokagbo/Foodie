@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  Foodie
 //
-//  Created by omokagbo on 27/05/2021.
+//  Created by EMMANUEL OMOKAGBO on 27/05/2021.
 //
 
 import UIKit
