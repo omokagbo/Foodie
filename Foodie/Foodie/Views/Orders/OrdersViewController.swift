@@ -2,7 +2,7 @@
 //  OrdersViewController.swift
 //  Foodie
 //
-//  Created by omokagbo on 13/06/2021.
+//  Created by EMMANUEL OMOKAGBO on 13/06/2021.
 //
 
 import UIKit
@@ -13,16 +13,32 @@ class OrdersViewController: UIViewController {
     
     let viewModel = OrderViewModel()
     
+    lazy var refreshControl = UIRefreshControl()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Orders"
         registerCells()
         self.presentHUD(status: nil)
+        setupRefreshControl()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
+        setupRefreshControl()
         setupViewModelListeners()
+    }
+    
+    fileprivate func setupRefreshControl() {
+        ordersTableView.refreshControl = refreshControl
+        ordersTableView.addSubview(refreshControl)
+        refreshControl.addTarget(self, action: #selector(didPullToRefresh), for: .valueChanged)
+    }
+    
+    @objc private func didPullToRefresh() {
+        viewModel.orders.removeAll()
+        refreshControl.beginRefreshing()
+        viewModel.fetchAllOrders()
     }
     
     private func registerCells() {
@@ -35,6 +51,7 @@ class OrdersViewController: UIViewController {
             DispatchQueue.main.async {
                 self?.dismissHUD()
                 self?.ordersTableView.reloadData()
+                self?.refreshControl.endRefreshing()
             }
         }
         

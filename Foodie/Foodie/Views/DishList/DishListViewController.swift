@@ -2,7 +2,7 @@
 //  DishListViewController.swift
 //  Foodie
 //
-//  Created by omokagbo on 13/06/2021.
+//  Created by EMMANUEL OMOKAGBO on 13/06/2021.
 //
 
 import UIKit
@@ -11,6 +11,8 @@ class DishListViewController: UIViewController {
     
     @IBOutlet weak var dishListTableView: UITableView!
     
+    lazy var refreshControl = UIRefreshControl()
+    
     let viewModel = DishListViewModel()
     
     override func viewDidLoad() {
@@ -18,6 +20,18 @@ class DishListViewController: UIViewController {
         title = viewModel.category?.title
         registerCell()
         setupViewModelListeners()
+        setupRefreshControl()
+    }
+    
+    private func setupRefreshControl() {
+        dishListTableView.refreshControl = refreshControl
+        dishListTableView.addSubview(refreshControl)
+        refreshControl.addTarget(self, action: #selector(didPullToRefresh), for: .valueChanged)
+    }
+    
+    @objc private func didPullToRefresh() {
+        refreshControl.beginRefreshing()
+        viewModel.getDishCategories()
     }
     
     private func setupViewModelListeners() {
@@ -26,6 +40,7 @@ class DishListViewController: UIViewController {
         viewModel.notifyCompletion = { [weak self] in
             DispatchQueue.main.async {
                 self?.dishListTableView.reloadData()
+                self?.refreshControl.endRefreshing()
                 self?.dismissHUD()
             }
         }

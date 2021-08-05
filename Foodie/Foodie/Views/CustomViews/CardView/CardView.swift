@@ -2,7 +2,7 @@
 //  CardView.swift
 //  Foodie
 //
-//  Created by omokagbo on 29/05/2021.
+//  Created by EMMANUEL OMOKAGBO on 29/05/2021.
 //
 
 import UIKit
