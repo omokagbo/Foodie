@@ -28,7 +28,7 @@ Click on the play button at the top left corner to build and run the project
 ## LAUNCH SCREEN:
 The launch screen showing the name of the app and an image
 
-<img width="238" alt="Screenshot 2021-06-05 at 22 04 54" src="https://user-images.githubusercontent.com/69020285/120905468-2379da80-c64a-11eb-97bf-ef43dd43a7b0.png"> 
+<img width="244" alt="Screenshot 2021-08-05 at 02 40 44" src="https://user-images.githubusercontent.com/69020285/128277625-eb25c67d-8eb9-4b5c-ba6d-5f208b640696.png">
 
 
 ## ONBOARDING SCREEN:
