@@ -34,6 +34,10 @@ struct NetworkService {
         request(route: .fetchDishCategories(categoryId), method: .get, completion: completion)
     }
     
+    func fetchAllOrders(completion: @escaping (Result<[Order], Error>) -> Void) {
+        request(route: .fetchAllOrders, method: .get, completion: completion)
+    }
+    
     /// Function that makes the actual request to the backend
     /// - Parameters:
     ///   - route: Path to the resource in the backend

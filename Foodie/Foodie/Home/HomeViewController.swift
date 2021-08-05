@@ -23,7 +23,7 @@ class HomeViewController: UIViewController {
         fetchAllCategories()
     }
     
-    func fetchAllCategories() {
+    private func fetchAllCategories() {
         self.presentHUD(status: "Fetching Dishes")
         NetworkService.shared.fetchAllCategories { [weak self] result in
             switch result {

@@ -22,7 +22,7 @@ class DishListViewController: UIViewController {
         getDishCategories()
     }
     
-    func getDishCategories() {
+    private func getDishCategories() {
         self.presentHUD(status: nil)
         NetworkService.shared.fetchDishCategories(categoryId: category?.id ?? "") { [weak self] result in
             switch result {
