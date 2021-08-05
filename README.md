@@ -1,6 +1,6 @@
 # Foodie
 
-Foodie is a food ordering app where users can see various kinds of dishes and make orders for the ones that appeal to them. 
+Foodie is a food ordering app where users can see various kinds of dishes from around the world and order the meals they desire from the comfort of their home. One of the unique services of this product is that it targets only healthy and high quality foods.
 
 # Requirements
 - iOS ~> 14.-
