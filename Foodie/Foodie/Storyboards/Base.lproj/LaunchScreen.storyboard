@@ -40,12 +40,21 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="by: Emmanuel Omokagbo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="18g-Hu-8mo">
+                                <rect key="frame" x="20" y="801" width="374" height="31"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="CJL-ju-WeF" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="0Rd-qK-HZp"/>
+                            <constraint firstItem="18g-Hu-8mo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="PFH-ge-1Gq"/>
                             <constraint firstItem="CJL-ju-WeF" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="YAF-gM-php"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="18g-Hu-8mo" secondAttribute="trailing" constant="20" id="drw-wk-mNw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="18g-Hu-8mo" secondAttribute="bottom" constant="30" id="plw-4K-WbD"/>
                         </constraints>
                     </view>
                 </viewController>

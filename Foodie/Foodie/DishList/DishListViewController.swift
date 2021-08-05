@@ -11,20 +11,31 @@ class DishListViewController: UIViewController {
     
     @IBOutlet weak var dishListTableView: UITableView!
     
-    var category: DishCategory!
+    var category: DishCategory?
     
-    var dish: [Dish] = [
-        .init(id: "id1", name: "Garri", description: "Cassava flakes with a difference", image: "https://picsum.photos/200/200", calories: 94),
-        .init(id: "id2", name: "Amala", description: "Amala with any soup of choice", image: "https://picsum.photos/200/200", calories: 224),
-        .init(id: "id3", name: "Semo", description: "Finest semo in town", image: "https://picsum.photos/200/200", calories: 246),
-        .init(id: "id4", name: "Fried Rice", description: "Fried rice with salad", image: "https://picsum.photos/200/200", calories: 128),
-        .init(id: "id5", name: "Jollof Rice", description: "Nigerian jollof like you have never tasted", image: "https://picsum.photos/200/200", calories: 140)
-    ]
+    var dish: [Dish] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = category.title
+        title = category?.title
         registerCell()
+        getDishCategories()
+    }
+    
+    func getDishCategories() {
+        self.presentHUD(status: nil)
+        NetworkService.shared.fetchDishCategories(categoryId: category?.id ?? "") { [weak self] result in
+            switch result {
+            case .success(let dishes):
+                self?.dismissHUD()
+                self?.dish = dishes
+                DispatchQueue.main.async {
+                    self?.dishListTableView.reloadData()
+                }
+            case .failure(let error):
+                self?.showHUDError(status: error.localizedDescription)
+            }
+        }
     }
     
     private func registerCell() {

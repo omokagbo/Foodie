@@ -26,6 +26,14 @@ struct NetworkService {
         request(route: .placeOrder(dishId), method: .post, parameters: params, completion: completion)
     }
     
+    /// Function to get categories of dishes from the backend
+    /// - Parameters:
+    ///   - categoryId: the id of each food category
+    ///   - completion: completion to show when a request has been made to fetch the dish categories
+    func fetchDishCategories(categoryId: String, completion: @escaping (Result<[Dish], Error>) -> Void) {
+        request(route: .fetchDishCategories(categoryId), method: .get, completion: completion)
+    }
+    
     /// Function that makes the actual request to the backend
     /// - Parameters:
     ///   - route: Path to the resource in the backend
