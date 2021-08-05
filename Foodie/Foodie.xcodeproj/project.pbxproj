@@ -52,6 +52,7 @@
 		B49A4F31266D1ECE003E9087 /* ChefSpecialsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B49A4F2F266D1ECE003E9087 /* ChefSpecialsCollectionViewCell.xib */; };
 		B4E1AA9E26BBC514007FE043 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E1AA9D26BBC514007FE043 /* HomeViewModel.swift */; };
 		B4E1AAA026BBD187007FE043 /* HomeDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E1AA9F26BBD187007FE043 /* HomeDetailsViewModel.swift */; };
+		B4E1AAA226BBE7A7007FE043 /* DishListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E1AAA126BBE7A7007FE043 /* DishListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +112,7 @@
 		B49A4F2F266D1ECE003E9087 /* ChefSpecialsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChefSpecialsCollectionViewCell.xib; sourceTree = "<group>"; };
 		B4E1AA9D26BBC514007FE043 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		B4E1AA9F26BBD187007FE043 /* HomeDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailsViewModel.swift; sourceTree = "<group>"; };
+		B4E1AAA126BBE7A7007FE043 /* DishListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -282,6 +284,7 @@
 				B427728726606828007FA7E5 /* OnboardingViewModel.swift */,
 				B4E1AA9D26BBC514007FE043 /* HomeViewModel.swift */,
 				B4E1AA9F26BBD187007FE043 /* HomeDetailsViewModel.swift */,
+				B4E1AAA126BBE7A7007FE043 /* DishListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -491,6 +494,7 @@
 				B4E1AAA026BBD187007FE043 /* HomeDetailsViewModel.swift in Sources */,
 				B486995026BB310000094114 /* NetworkService.swift in Sources */,
 				B49A4F29266CFBE3003E9087 /* PopularDishesCollectionViewCell.swift in Sources */,
+				B4E1AAA226BBE7A7007FE043 /* DishListViewModel.swift in Sources */,
 				B4277285266067A3007FA7E5 /* OnboardingSlideModel.swift in Sources */,
 				B42773122661ABBB007FA7E5 /* String+Extension.swift in Sources */,
 				B49A4F2C266CFEA1003E9087 /* Dish.swift in Sources */,

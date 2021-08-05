@@ -90,7 +90,7 @@ extension HomeViewController: UICollectionViewDelegate {
         if collectionView == foodCategoryCollectionView {
             let controller = DishListViewController.instantiate(storyboardName: "DishList")
             navigationController?.modalPresentationStyle = .fullScreen
-            controller.category = viewModel.categories[indexPath.row]
+            controller.viewModel.category = viewModel.categories[indexPath.row]
             navigationController?.pushViewController(controller, animated: true)
         } else {
             let controller = HomeDetailsViewController.instantiate(storyboardName: "HomeDetails")
