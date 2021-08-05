@@ -23,6 +23,8 @@ Open the file `Foodie.xcodeproj` using Xcode
 
 Click on the play button at the top left corner to build and run the project
 
+# FEATURES
+
 ## LAUNCH SCREEN:
 The launch screen showing the name of the app and an image
 
